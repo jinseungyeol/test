@@ -627,8 +627,8 @@ input[id="web-tab5"]:checked ~ .web-heading .web-btn label[for="web-tab5"]:befor
   left: 50px;
   top: 50px;
   font-size: 30px;
-  width: unset;
-  padding: 20px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
