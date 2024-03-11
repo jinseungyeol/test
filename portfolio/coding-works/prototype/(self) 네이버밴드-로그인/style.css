@@ -1,0 +1,116 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #333;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Entire */
+.container {}
+header {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  padding-top: 8px;
+  box-sizing: border-box;
+}
+section {
+  height: calc(100vh - 50px);
+  background-color: #f8f8f8;
+}
+
+/* Section */
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 300px;
+  padding: 35px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(147, 136, 136, 0.37);
+}
+.login h1 {
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 45px;
+}
+.btn {
+  display: block;
+  text-align: center;
+  padding: 7px;
+  margin: 10px 0;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.mobile {
+  border: 1px solid #aaa;
+  color: #000;
+}
+.or {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.or:before {
+  content:'';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #000;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.email {
+  background-color: #6d7084;
+}
+.naver {
+  background-color: #25D366;
+}
+.facebook {
+  background-color: #3b5999;
+}
+.line {
+  background-color: #00c300;
+}
+.login-save label {}
+input[id=chk] {
+  display: none;
+}
+input[id=chk] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -3px;
+  background: url(images/icon-radio.png) no-repeat;
+  background-position: left;
+}
+input[id=chk]:checked + em {
+  background-position: right;
+}
+.login-register {
+  text-align: center;
+  margin-top: 40px;
+}
+.login-register a {
+  font-weight: 600;
+}

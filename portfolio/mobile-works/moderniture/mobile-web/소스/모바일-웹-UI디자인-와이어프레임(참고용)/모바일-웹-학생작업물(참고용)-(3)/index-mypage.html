@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>mypage</title>
+	<!-- Jqurery CDN -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- XE ICON -->
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<!-- Custon CSS -->
+	<link rel="stylesheet" href="style-mypage.css">
+</head>
+<body>
+	
+	<div class="container mypage">
+		<i class="xi-angle-left" onClick='window.history.back()'></i>
+		<h3>오늘도 플로와 함께하는<span><b>안임마누엘</b> 회원님</span></h3>
+		<div class="mypage-content">
+			<div class="mypage-profile">
+				<a href="#none"><img src="images/mypage/profile.png" alt=""></a>
+				<span>카카오  계정 회원</span>
+				<small>immanuel***@naver.come</small>
+				<a href="#none">정보변경</a>
+			</div>
+			<div class="mypage-info" -ms-overflow-style: none;>
+				<div>
+					<a href="#none">회원정보 변경</a>
+					<i class="xi-angle-right-min"></i>
+				</div>
+				<div>
+					<a href="#none">일회용 인증번호(OTP)</a>
+					<i class="xi-angle-right-min"></i>
+				</div>
+				<div>
+					<a href="#none">본인인증 </a>
+					<span>인증하기</span>
+				</div>
+				<div>
+					<a href="#none">SKT 회원인증 <small>SK 텔레콤 회원의 혜택을 위해 본인인증을 진행합니다.</small></a>
+					<span>인증하기</span>
+				</div>
+				<div>
+					<a href="#none">성인인증<small>일부 음원 이용을 위한 성인인증을 진행합니다.</small></a>
+					<span>인증하기</span>
+				</div>
+				<div>
+					<a href="#none">이용권 결제</a>
+					<i class="xi-angle-right-min"></i>
+				</div>
+				<div>
+					<a href="#none">현재보유 이용권</a>
+					<i class="xi-angle-right-min"></i>
+				</div>
+				<div>
+					<a href="#none">회원탈퇴</a>
+					<i class="xi-angle-right-min"></i>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="audio-detail">
+				<a href="index-detail.html"><img src="images/main/char02-01.png"></a>
+				<h5>Daffodils<small>Adam Snow</small></h5>
+			</div>
+			<div class="audio-btns">
+				<div class="play-btn">
+					<i class="xi-step-backward"></i>
+					<i class="xi-play"></i>
+					<i class="xi-step-forward"></i>
+				</div>
+				<a href="#none"><i class="xi-plus-min"></i></a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		$('.mypage-info div span').click(function(){
+			$(this).addClass('active')
+			$(this).text('인증완료')
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공차 홈페이지</title>
+  
+    <!-- j-query CDN -->
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+  
+    <!-- Custom CSS & JS -->
+    <script src="custom.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- Slick.js -->
+    <script src="slick/slick.js"></script>
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+  </head>
+<body>
+  
+  <div class="container">
+    <div class="allmenu">
+      <div class="allmenu-inner">
+        <div class="subpage-header">
+          <a class="xi-arrow-left" href="javascript:history.back()"></a>
+          <span>모든메뉴</span>
+        </div>
+        <input type="radio" name="allmenu-category" id="allmenu-category01" checked>
+        <input type="radio" name="allmenu-category" id="allmenu-category02">
+        <input type="radio" name="allmenu-category" id="allmenu-category03">
+        <input type="radio" name="allmenu-category" id="allmenu-category04">
+        <input type="radio" name="allmenu-category" id="allmenu-category05">
+        <input type="radio" name="allmenu-category" id="allmenu-category06">
+        <span></span>
+        <label for="allmenu-category01">전체메뉴</label>
+        <label for="allmenu-category02">시즌메뉴</label>
+        <label for="allmenu-category03">베스트콤비네이션</label>
+        <label for="allmenu-category04">브라운슈가</label>
+        <label for="allmenu-category05">과일믹스</label>
+        <label for="allmenu-category06">커피</label>
+        <span></span>
+        <!-- allmenu-slide -->
+        <div class="allmenu-slide01 allmenu-tab-content"></div>
+        <div class="allmenu-slide02 allmenu-tab-content">
+          <div class="menu-category">
+            <p>시즌메뉴<span>2021 봄 스페셜 시즌 음료</span></p>
+          </div>
+          <div class="season-allmenu">
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/season-menu01.png">
+              <p>딸기 쿠키 스무디</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/season-menu02.png">
+              <p>딸기 치즈 쿠키 크러쉬</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/season-menu03.png">
+              <p>딸기 쿠키 밀크티</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/season-menu04.png">
+              <p>딸기 쏙쏙 쥬얼리 밀크티</p>
+            </a>
+          </div>
+        </div>
+        <div class="allmenu-slide03 allmenu-tab-content">
+          <div class="menu-category">
+            <p>베스트 콤비네이션<span>새로워진 공차 베스트 콤비네이션</span></p>
+          </div>
+          <div class="bestcombi-allmenu">
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-01.png">
+              <p>블랙밀크티 + 펄</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-02.png">
+              <p>제주 그린 밀크티 + 펄</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-03.png">
+              <p>타로 밀크티 + 펄</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-04.png">
+              <p>우롱티 + 밀크폼</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-05.jpg">
+              <p>망고 요구르트<br>+ 화이트펄</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/bestcombi-06.png">
+              <p>패션후르츠 히비스커스<br>+ 코코넛</p>
+            </a>
+          </div>
+        </div>
+        <div class="allmenu-slide04 allmenu-tab-content">
+          <div class="menu-category">
+            <p>브라운슈가<span>부드럽고 달콤한 브라운 슈가 메뉴</span></p>
+          </div>
+          <div class="bestcombi-allmenu">
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/brownsugar-01.png">
+              <p>브라운슈가 커피 밀크티</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/brownsugar-02.jpg">
+              <p>브라운슈가 치즈폼 스무디</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/brownsugar-03.jpg">
+              <p>브라운슈가 쥬얼리 밀크티</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/brownsugar-04.png">
+              <p>브라운슈가 치즈폼<br>쿠키 밀크티</p>
+            </a>
+          </div>
+        </div>
+        <div class="allmenu-slide05 allmenu-tab-content">
+          <div class="menu-category">
+            <p>과일믹스<span>새콤달콤한 과일이 믹스된 메뉴</span></p>
+          </div>
+          <div class="bestcombi-allmenu">
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-01.png">
+              <p>자몽 그린티</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-02.png">
+              <p>청포도 그린티</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-03.png">
+              <p>패션후르츠 히비스커스</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-04.png">
+              <p>망고주스</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-05.png">
+              <p>자몽주스</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/fruitmix-06.png">
+              <p>망고 요구르트</p>
+            </a>
+          </div>
+        </div>
+        <div class="allmenu-slide06 allmenu-tab-content">
+          <div class="menu-category">
+            <p>커피<span>진하고 부드러운 공차의 커피메뉴</span></p>
+          </div>
+          <div class="bestcombi-allmenu">
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/coffee-01.jpg">
+              <p>아메리카노</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/coffee-02.png">
+              <p>카페라떼</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/coffee-02.png">
+              <p>딥바닐라 카페라떼</p>
+            </a>
+            <a class="all-menu-list" href="product-view.html">
+              <img src="images/12_allmenu/coffee-03.png">
+              <p>딥모카 카페라떼</p>
+            </a>
+          </div>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

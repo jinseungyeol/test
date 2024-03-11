@@ -1,0 +1,256 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+
+/* Common CSS */
+* {
+  /* font-family: 'Monoton', cursive; */
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 300;
+  margin: 0;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.video-frame {}
+.video-frame:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: linear-gradient(to left, #a46eb942, transparent);
+}
+.video-frame video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.logo img {
+  width: 60px;
+}
+
+/* Heading */
+.heading {
+  color: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  width: 700px;
+  animation: showing1 1.5s linear both;
+}
+.heading h1 {
+  font-size: 40px;
+  line-height: 1.2em;
+  color: #9b59b6;
+}
+.heading span {
+  display: block;
+  color: #fff;
+}
+.heading p {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+.button {
+  margin-top: 50px;
+}
+.btn {
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 30px;
+  border-radius: 50px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.detail-view {
+  background-color: #fff;
+  color: #9b59b6;
+  padding-bottom: 10px;
+}
+.Read-more {
+  border: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.Read-more:hover {
+  color: #000;
+  background-color: #fff;
+  border-color: transparent;
+}
+.detail-view:hover {
+  background-color: #9b59b6;
+  color: #fff;
+}
+
+/* Anniversary */
+.anniversary {
+  position: absolute;
+  bottom: 150px;
+  right: 50px;
+  line-height: 7em;
+  text-align: center;
+  animation: showing2 1.5s linear both;
+}
+.anniversary span {
+  font-size: 25px;
+  letter-spacing: 7px;
+}
+.anniversary em {
+  font-style: normal;
+  display: block;
+  font-size: 150px;
+  font-family: 'Monoton', cursive;
+}
+
+@keyframes showing1 {
+  0% {
+    opacity: 0;
+    margin-left: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+@keyframes showing2 {
+  0% {
+    opacity: 0;
+    margin-right: -100px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
+.trigger {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 200;
+}
+.trigger span{
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.trigger.active span {
+  background-color: #fff;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+  width: 80%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+.trigger.active span:nth-child(1){
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2){
+  opacity: 0;
+}
+.trigger.active span:nth-child(3){
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+
+/* modal */
+.modal-gnb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  z-index: 200;
+}
+.gnb li a {
+  color: #fff;
+  display: inline-block;
+  font-size: 50px;
+  animation: gnb 0.5s linear both;
+  line-height: 1.4em;
+  position: relative;
+}
+.gnb li a:before {
+  position: absolute;
+  content: attr(data-text);
+  color: #9b59b6;
+  width: 0;
+  overflow: hidden;
+  transition: 0.35s;
+  white-space: nowrap;
+  text-shadow: -1px 0 #9b59b6, 0 1px #9b59b6, 1px 0 #9b59b6, 0 -1px #9b59b6;
+}
+.gnb li a:hover:before {
+  width: 100%;
+}
+.gnb li:nth-child(1) a {
+  animation-delay: 0.5s;
+}
+.gnb li:nth-child(2) a {
+  animation-delay: 0.7s;
+}
+.gnb li:nth-child(3) a {
+  animation-delay: 0.9s;
+}
+.gnb li:nth-child(4) a {
+  animation-delay: 1.1s;
+}
+.gnb li:nth-child(5) a {
+  animation-delay: 1.3s;
+}
+
+@keyframes gnb {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

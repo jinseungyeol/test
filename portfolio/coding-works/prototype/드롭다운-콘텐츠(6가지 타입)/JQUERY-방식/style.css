@@ -1,0 +1,215 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 15px;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* Section : Program */
+.program {
+}
+.inner {
+  width: 1150px;
+  margin: auto;
+}
+.program .inner h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.program-items {
+  /* display: flex;
+  gap: 40px; */
+  height: 180px;
+}
+.program-item {
+  /* display: inline-block;
+  width: 354px;
+  margin-right: 40px; */
+  float: left;
+  width: calc(calc(100% - 80px) / 3);
+  margin-right: 40px;
+  flex: 1;
+  position: relative;
+}
+.program-item:last-child {
+  margin-right: 0;
+}
+.item-list {
+  height: 150px;
+  background-color: #185EAB;
+  color: #fff;
+  /* text-align: center;
+  padding-top: 29px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.program-item:nth-child(2) .item-list {
+  background-color: #4F48A9;
+}
+.program-item:nth-child(3) .item-list {
+  background-color: #8C65C1;
+}
+.item-list h4 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.item-list h4 small {
+  display: block;
+}
+.item-desc {
+  border: 3px solid #185EAB;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.program-item:nth-child(1) .item-desc {
+  border: 3px solid #185EAB;
+}
+.program-item:nth-child(2) .item-desc {
+  border: 3px solid #4F48A9;
+}
+.program-item:nth-child(3) .item-desc {
+  border: 3px solid #8C65C1;
+}
+.item-desc p {
+  margin-top: 0;
+  text-align: center;
+}
+.btn {
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  padding: 8px 0;
+  margin: 5px;
+  background-color: #043082;
+}
+.btn.download {
+  background-color: #292285;
+}
+.btn.down {
+  background-color: #4F48A9;
+  width: 200px;
+}
+.desc {
+  background-color: #eee;
+  padding: 10px;
+}
+.desc span {
+  display: block;
+  font-size: 13px;
+}
+.desc span:before {
+  content: '- ';
+}
+
+.status-content {
+  overflow: hidden;
+}
+.free-down {
+  display: inline-block;
+}
+.free-down h4 {
+  margin: 0;
+}
+.free-down p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.global {
+  float: right;
+  background-color: #0A56A9;
+  padding: 5px 10px;
+  display: block;
+  margin-top: 8px;
+}
+.global a {
+  color: #fff;
+}
+.status-select {
+  background-color: #eee;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.status-select select {
+  border: none;
+  width: 200px;
+  padding: 3px;
+  outline: none;
+}
+.status-select a {
+  background-color: #68707F;
+  color: #fff;
+  padding: 2px 10px;
+}
+.status {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+.status span {
+  display: block;
+}
+.status th {
+  font-weight: 400;
+  background-color: #eee;
+  padding: 10px;
+}
+.status td {
+  text-align: center;
+  padding: 20px 0;
+}
+.status tr:nth-child(1) {
+  border-top: 1px solid #000;
+}
+.status tr:nth-child(2) {
+  border-bottom: 1px solid #000;
+}
+.status tr:last-child {
+  border-bottom: 1px solid #000;
+}
+.status tr:first-child th:first-child {
+  border-left: 1px solid #fff;
+}
+.status tr:nth-child(2) th:last-child {
+  border-right: 1px solid #fff;
+}
+.status tr:nth-child(3) td:first-child {
+  border-left: 1px solid #fff;
+}
+.status tr td:last-child {
+  border-right: 1px solid #fff;
+}
+.status tr:first-child th:last-child {
+  border-right: 1px solid #fff;
+}
+.status tr:nth-child(3) td:nth-child(1) {
+  background-color: #eee;
+  font-weight: 400;
+}
+
+/* #### JQUERY 방식 드롭다운 #### */

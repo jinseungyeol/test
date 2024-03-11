@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쇼핑몰-UI-호버이펙트</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="item">
+    <img src="images/product.jpg">
+    <div class="detail">
+      <div class="title">
+        <h2>UNALLOYED<span>men's Designer Wear</span></h2>
+        <div class="price">$30.99</div>
+      </div>
+      <div class="info">
+        <div class="size">
+          <span>Sizes</span>
+          <div class="size-select">
+            <b>XS</b>
+            <b>S</b>
+            <b>M</b>
+            <b>L</b>
+            <b>XL</b>
+          </div>
+        </div>
+        <div class="color">
+          <span>Colors</span>
+          <div class="color-select">
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+            <b></b>
+          </div>
+          <a class="add-cart" href="#none">Add to Cart</a>
+        </div>
+        <div class="wish"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.wish').click(function(){
+      $(this).toggleClass('active')
+    })
+    $('.size-select b').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+    })
+    $('.color-select b').click(function(){
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+    })
+  </script>
+
+</body>
+</html>

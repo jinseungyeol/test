@@ -1,0 +1,58 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #222;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8em;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #fff;
+  /* -moz-text-stroke: 1px #fff;
+  -ms-text-stroke: 1px #fff; */
+  color: transparent;
+  position: relative;
+  transition: 0.35s;
+  text-transform: uppercase;
+}
+
+.btn:before,
+.btn:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.35s;
+  opacity: 0;
+  -webkit-text-stroke: transparent;
+}
+.btn:before {
+  color: #bdc3c7;
+}
+.btn:after {
+  color: #f1c40f;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  opacity: 1;
+  transform: translate(10px, -10px);
+}
+.btn:hover:after {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}

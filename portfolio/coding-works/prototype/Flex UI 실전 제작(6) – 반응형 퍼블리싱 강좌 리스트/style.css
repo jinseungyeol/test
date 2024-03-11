@@ -1,0 +1,106 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Common CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #222;
+}
+p {
+  margin-top: 0;
+}
+
+/* Content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  width: 1200px;
+  background-color: #fff;
+  padding-top: 20px;
+}
+.content h1 {
+  position: relative;
+  display: inline-block;
+  padding-right: 10px;
+  font-weight: normal;
+  margin-top: 0;
+}
+.content h1:before {
+  content:"\f105";
+  font-family: fontawesome;
+  position: absolute;
+  left: 100%;
+  padding-top: 1px;
+}
+.content .items {
+  display: flex;
+  gap: 10px;
+}
+.content .item,
+.content .item-event {
+  width: 300px;
+  flex: 1;
+}
+.content .item .photo,
+.content .item-event .photo {
+  width: 100%;
+}
+.content .item .photo img,
+.content .item-event .photo img {
+  width: 100%;
+}
+.content .item .desc,
+.content .item-event .desc {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.desc-inner {
+  margin-top: auto;
+}
+.item-event p {
+  margin-bottom: 15px;
+}
+.content .item b {
+  color: dodgerblue;
+}
+.star i {
+  color: gold;
+  margin-right: -3px;
+}
+.content .item span {
+  display: block;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+.content .item em {
+  font-style: normal;
+  background-color: #27ae60;
+  color: #fff;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+}
+.content .item .exclusive {
+  background-color: tomato;
+  color: #fff;
+}
+.content .item-event p {
+  color: #706fd3;
+  font-weight: 500;
+}

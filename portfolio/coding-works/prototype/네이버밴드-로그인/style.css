@@ -1,0 +1,133 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* Default CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #333;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Entire Layout */
+.container {}
+header {
+  height: 50px;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+section {
+  height: calc(100vh - 50px);
+  position: relative;
+  background-color: #eee;
+}
+.login {
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.11);
+  padding: 35px;
+  box-sizing: border-box;
+}
+
+/* Section */
+.login h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-top: 10px;
+  text-align: center;
+}
+.btn {
+  display: block;
+  text-align: center;
+  padding: 7px;
+  margin: 15px 0;
+  border-radius: 3px;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.or {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.or:before,
+.or:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #ddd;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.or:before {
+  left: 0;
+}
+.or:after {
+  right: 0;
+}
+.btn.mobile {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  background: url(images/logo-mobile.png) no-repeat center left 8px;
+}
+.btn.email {
+  background: url(images/logo-email.png) no-repeat center left 10px;
+  background-color: #717b87;
+}
+.btn.naver {
+  background: url(images/logo-naver.png) no-repeat center left 10px;
+  background-color: #09b83e;
+}
+.btn.facebook {
+  background: url(images/logo-facebook.png) no-repeat center left 10px;
+  background-color: #3b5999;
+}
+.btn.line {
+  background: url(images/logo-line.png) no-repeat center left 10px;
+  background-color: #00c300;
+}
+.login-save {}
+.login-save label {
+}
+input[id=chk] {
+  display: none;
+}
+input[id=chk] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -3px;
+  background: url(images/icon-radio.png) no-repeat;
+  background-position: left;
+}
+input[id=chk]:checked + em {
+  background-position: right;
+}
+
+.register {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.register a {
+  font-weight: 600;
+}

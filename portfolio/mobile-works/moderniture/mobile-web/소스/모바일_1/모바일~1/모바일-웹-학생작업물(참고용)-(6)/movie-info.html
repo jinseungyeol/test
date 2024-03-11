@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>movie-info</title>
+	<script src="	https://code.jquery.com/jquery-3.4.1.js"></script>
+	<!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/home-style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<header class="sub-header">
+      <div>
+				<a class="nemu-btn" href="#a"><img src="images/icon-02.png" alt="메뉴"></a>
+				<a  class="back-btn" href="javascript:history.back()"><img src="images/icon-07.png" alt="뒤로가기"></a>
+      </div>
+      <h2>Movie Chart</h2>
+			<a class="ticket" href="#a"><img src="images/icon-01.png" alt="예매"></a>
+    </header>
+<!-- //header -->
+		<main>
+			<section class="info-summary">
+				<div class="info-top">
+					<img src="images/info-bg-01.png" alt="">
+				</div>
+				<div class="info-bottom">
+					<div class="info-thum">
+						<img src="images/thum-01.png" alt="">
+					</div>
+					<div class="info-heading">
+						<h3>터미네이터:다크 페이트<span class="grade-old old15">15</span></h3>
+						<small>2019.10.30 개봉</small>
+						<p class="movie-btn">
+						  <input type="checkbox" id="like-btn">
+						  <label for="like-btn">6,485</label>
+							<a href=""><img src="images/icon-09.png" alt="">예매하기</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="info-detail">
+				<input type="radio" name="info" id="info01" checked>
+				<input type="radio" name="info" id="info02">
+				<input type="radio" name="info" id="info03">
+				<div class="info-btn clear">
+					<label for="info01">영화정보</label>
+					<label for="info02">실관람평</label>
+					<label for="info03">관련소식</label>
+				</div>
+				<div class="detail-con detail-movie">
+					<div class="feature">
+						<ul>
+							<li>
+							  <span>장르</span>액션, SF, 어드벤처
+							</li>
+							<li>
+							  <span>상영시간</span>125분
+							</li>
+							<li>
+							  <span>관람가</span>12세이상관람가
+							</li>
+						</ul>
+					</div>
+					<div class="cast">
+						<h4>감독/출연</h4>
+						<div>
+              <!--cast-slider-->
+							<div class="cast-list uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+							  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+							    <li>
+							      <img src="images/cast-01.jpg" alt="">
+							    </li>
+							    <li>
+							      <img src="images/cast-02.jpg" alt="">
+							    </li>
+							    <li>
+							      <img src="images/cast-03.jpg" alt="">
+							    </li>
+							    <li>
+							      <img src="images/cast-04.jpg" alt="">
+							    </li>
+							    <li>
+							      <img src="images/cast-05.jpg" alt="">
+							    </li>
+							  </ul>
+							  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+							</div>
+						</div>
+					</div>
+					<div class="story">
+						<h4>줄거리</h4>
+						<p>
+							심판의 날 그 후, 모든 것이 다시 시작된다!
+						</p>
+						<p>
+							심판의 날 그 후, 뒤바뀐 미래 
+							새로운 인류의 희망 ‘대니’(나탈리아 레이즈)를 지키기 위해 슈퍼 솔져
+							‘그레이스’(맥켄지 데이비스)가 미래에서 찾아오고, ‘대니’를 제거하기
+							위한 터미네이터 ‘Rev-9’(가브리엘 루나)의 추격이 시작된다.
+						</p>
+						<p>
+							최첨단 기술력으로 무장한 최강의 적 터미네이터 ‘Rev-9’의 무차별적인 
+							공격에 쫓기기 시작하던 ‘그레이스’와 ‘대니’ 앞에 터미네이터 헌터
+							‘사라 코너’(린다 해밀턴)가 나타나 도움을 준다.
+						</p>
+						<p>
+							인류의 수호자이자 기계로 강화된 슈퍼 솔져 ‘그레이스’와 ‘사라 코너’는
+							‘대니’를 지키기 위해 새로운 조력자를 찾아 나서고,
+							터미네이터 ‘Rev-9’은 그들의 뒤를 끈질기게 추격하는데...
+						</p>
+						<p>
+							더 이상 정해진 미래는 없다 
+							지키려는 자 VS 제거하려는 자, 새로운 운명이 격돌한다!
+						</p>
+					</div>
+				</div>
+				<div class="detail-con detail-review">
+					<div class="grade">
+						<p>
+						  <span><small>1,1126명 참여</small>7.9</span>
+						  <span><small>누적관객</small>1,404,000</span>
+						</p>
+					</div>
+					<div class="mini-banner">
+            <a href="#a">	
+              <img src="images/minibanner-01.png" alt="광고">
+            </a>
+          </div>
+    <!-- //mini-banner -->
+					<div class="post-review">
+						<h4>관람포스트</h4>
+						<div>
+							<!-- post slider -->
+							<div class="post-list uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+							  <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+							    <li>
+							      <a class="post-con" href="#a">
+							        <img src="images/post-01.png" alt="">
+							        <span class="movie-text">
+							          <strong>ididi***</strong>
+							          <em>
+							            화려한 액션장면이 좋았어요 화려한 액션장면이 화려한 액션장면이 좋았어요 화려한...
+							            <small>1시간 전 | 추천 0 </small>
+							          </em>
+							        </span>
+							      </a>
+							    </li>
+							    <li>
+							      <a class="post-con" href="#a">
+							        <img src="images/post-03.png" alt="">
+							        <span class="movie-text">
+							          <strong>asdfw***</strong>
+							          <em>
+							            대니와 그레이스의 관계성은 정말 치이지 않을 수가 없다.
+							            <small>5시간 전 | 추천 1 </small>
+							          </em>
+							        </span>
+							      </a>
+							    </li>
+							    <li>
+							      <a class="post-con" href="#a">
+							        <img src="images/post-02.png" alt="">
+							        <span class="movie-text">
+							          <strong>jfdgf***</strong>
+							          <em>
+							            진짜 미친영화... 여자 셋의 환상호흡 !!! 안보신 분들은 꼭 봐줬으면 하는 영화!!
+							            <small>10시간 전 | 추천 1 </small>
+							          </em>
+							        </span>
+							      </a>
+							    </li>
+							  </ul>
+							  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+							</div>
+						</div>
+						<a class="info-more" href="#a">전체보기</a>
+					</div>
+					<div class="shot-review">
+						<h4>한줄평</h4>
+						<ul>
+						  <li>
+                <div>
+                  <img src="images/thum-03.png" alt="">
+                </div>
+                <p>
+                  <strong>46yer***</strong>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  오랜만에 사라코너 너무 재밌어요~~~ 저는 1탄보다 존이 나왔던 2탄이 더욱 재밌었어요
+                  <small>1시간 전 | 추천 1</small>
+                </p>
+						  </li>
+						  <li>
+                <div>
+                  <img src="images/thum-03.png" alt="">
+                </div>
+                <p>
+                  <strong>gasfg***</strong>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  잼있게 봤습니다~~ 샤라코너가 나오니 좋네요
+                  <small>12시간 전 | 추천 0</small>
+                </p>
+						  </li>
+						  <li>
+                <div>
+                  <img src="images/thum-03.png" alt="">
+                </div>
+                <p>
+                  <strong>asfed***</strong>
+                  <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </span>
+                  스토리는 뻔하긴 한데 액션신이 화려해서 재밌었어요
+                  <small>2019.11.07 | 추천 0</small>
+                </p>
+						  </li>
+						</ul>
+						<a class="info-more" href="#a">작성하기</a>
+					</div>
+				</div>
+				<div class="detail-con detail-news">
+					<div class="news">
+						<div class="shot-review">
+							<h4>한줄평</h4>
+							<ul>
+								<li>
+									<div>
+										<img src="images/thum-03.png" alt="">
+									</div>
+									<p>
+										<strong>46yer***</strong>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										오랜만에 사라코너 너무 재밌어요~~~ 저는 1탄보다 존이 나왔던 2탄이 더욱 재밌었어요
+										<small>1시간 전 | 추천 1</small>
+									</p>
+								</li>
+								<li>
+									<div>
+										<img src="images/thum-03.png" alt="">
+									</div>
+									<p>
+										<strong>gasfg***</strong>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										잼있게 봤습니다~~ 샤라코너가 나오니 좋네요
+										<small>12시간 전 | 추천 0</small>
+									</p>
+								</li>
+								<li>
+									<div>
+										<img src="images/thum-03.png" alt="">
+									</div>
+									<p>
+										<strong>asfed***</strong>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+										스토리는 뻔하긴 한데 액션신이 화려해서 재밌었어요
+										<small>2019.11.07 | 추천 0</small>
+									</p>
+								</li>
+							</ul>
+							<a class="info-more" href="#a">작성하기</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div id="footer">
+      <!-- include footer -->
+		</div>
+	</div>
+	
+	<script>
+    $('#footer').load('footer.html');
+  </script>
+	
+</body>
+</html>

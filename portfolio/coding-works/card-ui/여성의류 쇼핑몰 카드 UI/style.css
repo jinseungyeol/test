@@ -1,0 +1,115 @@
+/* Google Web Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+@font-face {
+  font-family: 'SEBANG_Gothic_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.item-inner {
+  width: 1350px;
+  margin: auto;
+}
+.heading {
+  font-family: 'SEBANG_Gothic_Bold';
+  font-size: 85px;
+  text-align: center;
+  font-weight: normal;
+}
+.heading span {
+  color: #FDA7DF;
+}
+.items {
+  /* text-align: center; */
+  display: flex;
+  gap: 20px;
+  /* justify-content: center;
+  justify-content: space-between; */
+  counter-reset: item;
+}
+.item {
+  height: 400px;
+  /* width: 250px; */
+  /*display: inline-block;
+  margin: 8px; */
+  flex: 1;
+  position: relative;
+}
+.item:before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  background-color: grey;
+  z-index: 2;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.5s;
+}
+.item:hover:before {
+  background-color: #EA2027;
+}
+.photo {
+  position: relative;
+  height: 320px;
+  margin-bottom: 10px;
+}
+.photo a img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.photo a img:first-child {
+  opacity: 1;
+}
+.photo a img:last-child {
+  opacity: 0;
+}
+.photo:hover a img:first-child {
+  opacity: 0;
+}
+.photo:hover a img:last-child {
+  opacity: 1;
+}
+
+.detail {}
+.detail span {
+  display: block;
+}
+.detail .price b {
+  color: #EA2027;
+}
+.detail .name {}
+.detail .count {
+  color: #bbb;
+}

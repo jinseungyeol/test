@@ -1,0 +1,184 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Common CSS */
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin: 0;
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Shopping Mall Item */
+.item {
+  width: 300px;
+  height: 450px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.116);
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.item:hover .detail {
+  bottom: 0;
+}
+.item:hover img {
+  filter: blur(1px);
+}
+.item img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+.detail {
+  padding: 15px;
+  background-color: #f8f8f8;
+  position: absolute;
+  width: 100%;
+  bottom: -210px;
+  transition: 0.5s;
+  left: 0;
+}
+
+/* Title */
+.title {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.title h2 {
+  flex: 3;
+  font-size: 18px;
+}
+.title h2 span {
+  display: block;
+  color: #aaa;
+}
+.price {
+  font-weight: 400;
+  color: green;
+  font-size: 18px;
+  flex: 1;
+}
+
+/* Info */
+.info {
+  position: relative;
+}
+.size {}
+.size span {
+  font-weight: 400;
+  display: inline-block;
+  margin: 5px 0;
+}
+.size-select {}
+.size-select b {
+  font-weight: normal;
+  margin: 5px;
+  margin-left: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+}
+.size-select b:hover,
+.size-select b.active {
+  background-color: #000;
+  color: #fff;
+  border-radius: 3px;
+}
+.color {}
+.color span {
+  font-weight: 400;
+  display: inline-block;
+  margin: 5px 0;
+}
+.color-select {}
+.color-select b {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  margin-left: 0;
+  cursor: pointer;
+  transition: 0.5s;;
+}
+.color-select b.active {
+  border-radius: 50%;
+}
+.color-select b:nth-child(1) {
+  background-color: #000;
+}
+.color-select b:nth-child(2) {
+  background-color: green;
+}
+.color-select b:nth-child(3) {
+  background-color: gold;
+}
+.color-select b:nth-child(4) {
+  background-color: crimson;
+}
+.color-select b:nth-child(5) {
+  background-color: pink;
+}
+.add-cart {
+  display: block;
+  border: 1px solid #eee;
+  text-align: center;
+  font-weight: 400;
+  padding: 5px 0;
+  background-color: #fff;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+.add-cart:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: transparent;
+}
+.wish {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+.wish:before {
+  content: '\f08a';
+  font-family: fontawesome;
+  color: #999;
+}
+.wish.active:before {
+  content: '\f004';
+  color: red;
+}

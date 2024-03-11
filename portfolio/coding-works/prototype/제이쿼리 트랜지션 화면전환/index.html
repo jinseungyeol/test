@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>제이쿼리 트랜지션 화면전환</title>
+  <!-- XEICON -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="open-navi">
+      <i class="xi-arrow-right"></i>
+    </div>
+    <div class="close-navi">
+      <i class="xi-arrow-left"></i>
+    </div>
+    <div class="front">
+      <div class="front-text">
+        <p>Release : May 26, 2021</p>
+        <p>Rating : 12-year-old audience</p>
+        <p>Genre : Drama, crime, comedy</p>
+        <p>nation : the United States</p>
+        <p>Running time : 133 minutes</p>
+        <p>Distribution : Walt Disney Company Korea</p>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-background">
+        <div class="back-header">
+          <h1>Introduction</h1>
+        </div>
+        <div class="back-content">
+          <div class="back-text1">
+            <h1>"Goodbye, Estella."</h1>
+          </div>
+          <div class="back-text2">
+            <p>I knew it from the beginning. Some people feel uncomfortable because I'm special, but I can't please everyone. After all, I couldn't keep going to school, and Estella met Jasper and Horace like fate, and she used my great fashion sense to sweep the streets of London with perfect disguise and quick handwork. I entered the baroness's brand designer, and the moment I thought my dream would come true, I didn't know that baroness was such a person... So I decided to show you who I am. Bye, Estella. I'm Creuella now!</p>
+          </div>
+        </div>
+      </div>
+      <div class="back-footer">
+        <div class="back-photo1"></div>
+        <div class="back-photo2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('.open-navi').click(function(){
+      $('.open-navi, .close-navi').addClass('active')
+      $('.front').fadeOut()
+      $('.back').fadeIn()
+    })
+    $('.close-navi').click(function(){
+      $('.open-navi, .close-navi').removeClass('active')
+      $('.front').fadeIn()
+      $('.back').fadeOut()
+    })
+  </script>
+
+</body>
+</html>

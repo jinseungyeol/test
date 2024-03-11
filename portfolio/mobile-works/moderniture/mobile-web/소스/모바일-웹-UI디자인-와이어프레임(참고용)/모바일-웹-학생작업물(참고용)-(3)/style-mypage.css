@@ -1,0 +1,226 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Common CSS */
+body {
+	margin: 0;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+section {
+	margin: 15px 0;
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+/* Reset CSS */
+a {
+	text-decoration: none;
+	color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+/* Mypage */
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	position: relative;
+	gap: 25px;
+}
+.container.mypage {
+	height: 100vh;
+}
+.container > i {
+	align-self: flex-start;
+	font-size: 25px;
+	font-weight: 400;
+	color: #fff;
+	margin: 20px;
+}
+.container h3 {
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	margin: -20px 0 0;
+	line-height: 30px;
+}
+.container h3 span {
+	display: block;
+	text-align: center;
+}
+.container h3 span b {
+	font-weight: 400;
+	text-decoration: underline;
+}
+.mypage-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 0 5px 8px rgba(61, 36, 180, 0.20);
+	margin-bottom: 100px;
+}
+.mypage-content:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(to top, rgba(38, 0, 219, 0.6), rgba(38, 0, 219, 0.5)), url(images/login/bg.png) no-repeat center center;
+	background-size: cover;
+	z-index: -1;
+	opacity: .7;
+}
+.mypage-profile {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0 0;
+}
+.mypage-profile a:first-child {
+	border-radius: 50px;
+	overflow: hidden;
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+}
+.mypage-profile a img {
+	height: inherit;
+}
+.mypage-profile span {
+	font-size: 13px;
+	font-weight: 500;
+}
+.mypage-profile small {
+	color: #6e54ea;
+	font-weight: 500;
+	font-size: 8px;
+}
+.mypage-profile a:last-child {
+	color: #6e54ea;
+	font-weight: 500;
+	font-size: 13px;
+	border-radius: 20px;
+	border: 1px solid #6e54ea;
+	background: #fff;
+	padding: 0 15px;
+	box-shadow: 0 5px 15px rgba(52, 29, 162, 0.40);
+}
+.mypage-info {
+	width: 100%;
+	margin: 10px 0 0;
+	padding: 10px;
+	height: 250px;
+	overflow-x: hidden;
+}
+.mypage-info::-webkit-scrollbar {
+	display: none;
+}
+.mypage-info div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid #eee;
+	padding: 10px;
+}
+.mypage-info div a {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 16px;
+}
+.mypage-info div a small {
+	font-size: 8px;
+	color: grey;
+	display: block;
+	font-weight: 300;
+}
+.mypage-info div i {
+	color: #6e54ea;
+	font-size: 25px;
+}
+.mypage-info div span {
+	font-weight: 500;
+	font-size: 12px;
+	color: #6e54ea;
+	border-radius: 20px;
+	border: 1px solid #6e54ea;
+	padding: 0 10px;
+	box-shadow: 0 5px 8px rgba(61, 36, 180, 0.20);
+	margin-left: 15px;
+}
+.mypage-info div span.active {
+	opacity: .4;
+}
+/* Footer */
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: linear-gradient(80deg, #836af7, #6e54ea);
+	color: #fff;
+}
+.audio-detail {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.audio-detail a {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50px;
+	overflow: hidden;
+} 
+.audio-detail a img {
+	width: inherit;
+	object-fit: cover;
+}
+.audio-detail h5 {
+	line-height: 16px;
+	font-weight: 500;
+}
+.audio-detail h5 small {
+	display: block;
+	font-weight: 300;
+}
+.audio-btns {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+.audio-btns div {
+	display: flex;
+	align-items: center;
+}
+.audio-btns div i {
+	opacity: .5;
+}
+.audio-btns div i:nth-child(2) {
+	font-size: 35px;
+	opacity: 1;
+}
+.audio-btns a {
+	color: #fff;
+	border: 1px solid;
+	border-radius: 50px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+}

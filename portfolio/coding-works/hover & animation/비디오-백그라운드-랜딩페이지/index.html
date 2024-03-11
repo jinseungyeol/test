@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>비디오-백그라운드-랜딩페이지</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="video-frame">
+      <video src="images/background.mp4" muted autoplay loop poster="images/placeholder.jpg"></video>
+    </div>
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
+    <div class="heading">
+      <h1>Ocean<span>The World's Ocean</span></h1>
+      <p>
+        The ocean is the body of salt water which covers approximately 71% of thesurface of the Earth. It is also "any of the large bodies of water into which the great ocean is divided". A common definition lists five oceans, in descending order by area, the Pacific, Atlantic, Indian, Southern, and Arctic Oceans. Seawater covers approximately 361,000,000 km<sup>2</sup> and is customarily divided into several principal oceans and smaller seas, with the ocean as a whole covering approximately 71% of Earth's surface and 90% of the Earth's biosphere.
+      </p>
+      <div class="button">
+        <a href="#none" class="btn detail-view">Detail View</a>
+        <a href="#none" class="btn Read-more">Read More</a>
+      </div>
+    </div>
+    <div class="anniversary">
+      <span>Anniversary</span>
+      <em>50</em>
+    </div>
+    <div class="trigger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- GNB Modal -->
+    <div class="modal-gnb">
+      <ul class="gnb">
+        <li><a href="#none" data-text="Attractions">Attractions</a></li>
+        <li><a href="#none" data-text="Hotels & Spa">Hotels & Spa</a></li>
+        <li><a href="#none" data-text="Shop & Dine">Shop & Dine</a></li>
+        <li><a href="#none" data-text="Celebrate">Celebrate</a></li>
+        <li><a href="#none" data-text="Promotions">Promotions</a></li>
+      </ul>
+    </div>
+
+    <script>
+      $('.trigger').click(function () {
+        $(this).toggleClass('active')
+        $('.modal-gnb').fadeToggle()
+      })
+    </script>
+
+</body>
+
+</html>

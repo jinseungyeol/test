@@ -1,0 +1,116 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* XEICON */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+	font-weight: 300;
+	margin: 0;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+/* Product Overlay */
+section {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.heading {
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+.heading hr {
+	border: none;
+	background-color: orange;
+	width: 150px;
+	height: 2px;
+	margin-top: 60px;
+}
+.items {
+	margin: auto;
+	width: 1400px;
+	text-align: center;
+}
+.item {
+	display: inline-block;
+	margin: 7px;
+	transition: 0.4s;
+}
+.item:hover {
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.photo {
+	position: relative;
+}
+.photo img {
+	display: block;
+}
+.photo:hover .caption {
+	opacity: 1;
+}
+.caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	font-size: 17px;
+	padding-top: 85px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: 0.5s;
+}
+.caption a {
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid #fff;
+	padding: 1px 3px;
+	border-radius: 2px;
+}
+.desc {
+}
+.desc p {
+}
+.desc p b {
+	display: block;
+	font-size: 18px;
+}
+.desc p span {
+	color: royalblue;
+}
+.desc p s {
+	display: block;
+}
+.badge-group {
+	margin: 20px 0;
+}
+.badge {
+	color: #fff;
+	font-size: 10px;
+	padding: 3px;
+}
+.member {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid;
+	
+}
+.member .xi-heart-o {
+	color: crimson;
+}
+.coupon {
+	background-color: brown;
+}

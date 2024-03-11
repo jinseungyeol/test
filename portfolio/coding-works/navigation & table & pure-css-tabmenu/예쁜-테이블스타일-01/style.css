@@ -1,0 +1,47 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+}
+.enrolment {
+	border-collapse: collapse;
+	width: 700px;
+	border-top: 3px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.enrolment caption {
+	background-color: crimson;
+	margin-bottom: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 3px;
+	padding: 7px;
+	font-size: 22px;
+}
+.enrolment td,
+.enrolment th{
+	border: 1px solid #ccc;
+	padding: 5px;
+	text-align: center;
+}
+.enrolment th {
+	background-color: royalblue;
+	color: #fff;
+	font-weight: normal;
+	border: none;
+	
+}
+.enrolment td ul {
+	text-align: left;
+	list-style: circle;
+}

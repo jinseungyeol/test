@@ -1,0 +1,248 @@
+@media (max-width: 768px) {
+  body.active {
+    overflow: hidden;
+  }
+  
+  /* Header */
+  header {
+  }
+  header.active {
+    background-color: #fff;
+  }
+  .lnb-inner {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .gnb-inner {
+    height: 55px;
+    width: 100%;
+  }
+  .logo {
+    float:right;
+    margin-right: 8px;
+  }
+  .logo img {
+    width: 45px;
+    margin-left: 10px;
+  }
+  .navi {
+    float: none;
+    width: 250px;
+    height: 100vh;
+    background-color: #BFACA4;
+    box-shadow: -3px -3px 10px #000;
+    transform: translateX(-300px);
+    transition: 0.5s;
+  }
+  .navi.active {
+    transform: translateX(0);
+  }
+  .navi a {
+    display: block;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .trigger {
+    left: 10px;
+    display: block;
+  }
+
+  /* Overlay */
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Section : Welcome */
+ .welcome-item img {
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+ }
+  .heading h1 {
+    font-size: 22px;
+  }
+  .heading p {
+    width: 300px;
+  }
+
+  /* Section : About */
+  .about {
+    padding: 50px 0;
+  }
+  .about-inner {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  /* Section : Trend */
+  .trend {
+    padding: 50px 20px;
+    width: 100%;
+  }
+  .trend-inner {
+    width: 100%;
+  }
+  .trend-heading {
+    flex-direction: column;
+  }
+  .trend-inner h2 {
+    text-align: center;
+  }
+  .trend-heading a {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .trend-items .slick-arrow {
+    display: none !important;
+  }
+  .trend-item {
+    flex-direction: column;
+    height: 1000px;
+    text-align: center;
+  }
+  .trend-left {
+    flex: none;
+  }
+  .trend-right {
+    padding: 50px 20px;
+  }
+  .trend-right p {
+    margin-bottom: 0px;
+  }
+  .trend-right a {
+    margin: auto;
+    margin-top: 10px;
+  }
+  .trend-right img{
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Section : Review */
+  .review-inner {
+    width: 100%;
+  }
+  .review-inner h2:before,
+  .review-inner h2:after {
+    width: 40px;
+  }
+  .review-inner h2:before {
+    left: -50px;
+  }
+  .review-inner h2:after {
+    right: -50px;
+  }
+  .review-items {
+    display: block !important;
+  }
+  .review-items button {
+    display: none !important;
+  }
+  
+  /* Section : Banner */
+  .banner {
+    width: 100%;
+    height: 200px;
+  }
+  .banner-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .banner-content a {
+    font-size: 15px;
+  }
+  /* Section : Article */
+  .article-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Section : Etc */
+  .etc {
+    padding: 30px 0;
+  }
+  .etc:before {
+    width: 90%;
+  }
+  .etc-inner {
+    width: 100%;
+    padding: 20px;
+  }
+  .etc-content {
+    flex-direction: column;
+  }
+  .etc-left {
+    width: 100%;
+  }
+  .etc-left img {
+    display: block;
+  }
+  .etc-right img {
+    display: block;
+  }
+  /* .etc-right-tl .caption,
+  .etc-right-tr .caption,
+  .etc-right-bl .caption,
+  .etc-right-br .caption {
+    height: 96%;
+  } */
+  .etc-right-top {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .etc-right-tl {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .etc-right-bottom {
+    flex-direction: column;
+  }
+  .etc-right-bl {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .etc-left .caption a {
+    font-size: 13px;
+  }
+
+  /* Footer */
+  footer
+  .footer-inner {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    width: 100%;
+    background-color: #BFACA4;
+  }
+  .footer-left {
+    background-color: #fff;
+    margin: 0 20px;
+  }
+  .footer-right {
+    flex-direction: column;
+  }
+  .license {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sns {
+    margin-top: 20px;
+  }
+}

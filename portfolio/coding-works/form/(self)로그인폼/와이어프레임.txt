@@ -1,0 +1,16 @@
+.login
+	h1
+	input > email
+	input > password
+	label
+		input > checkbox
+		a
+	input > button
+	h5
+	.btn
+		a>font *2
+	.remember	
+		span
+		a
+	
+	

@@ -1,0 +1,30 @@
+.container
+	.apply-form
+		h1
+		p
+		fieldset
+			.field
+				span > em
+				input[type=text]
+			.field
+				span > em
+				input[type=email]
+		fieldset
+			.field
+				span > em
+				input[type=tel]
+			.field
+				span>em
+				select
+		fieldset
+			.field
+				span>em
+				textarea
+		fieldset
+			.field
+				span
+				iframe
+				label >input[type=checkbox]
+		input[type=submit]
+			
+			

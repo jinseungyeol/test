@@ -1,0 +1,22 @@
+form
+	.login
+		h1
+		span
+		input[type=email]
+		span
+		input[type=password]
+		.save-info
+			label > input[checkbox]
+			a
+		.event-info
+			.custom-checkbox
+				label > input[type=checkbox]
+				label > input[type=checkbox]
+		input[type=submit]
+		.sns-info
+			.sns
+				a*4 > font
+		.signup-info
+			a
+			
+			

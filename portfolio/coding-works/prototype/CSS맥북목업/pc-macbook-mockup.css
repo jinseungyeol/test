@@ -1,0 +1,84 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+.mockup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.macbook-mockup {
+  width: 700px;
+  height: 560px;
+  position: relative;
+}
+.screen {
+  height: 450px;
+  border-radius: 15px;
+}
+.screen-frame {
+  position: relative;
+  height: 390px;
+  background-color: #000;
+}
+.iframe-url {
+  width: 650px;
+  height: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.screen-logo {
+  font-size: 30px;
+  background-color: #ccc;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 0 0 15px 15px;
+}
+.stand {
+  position: relative;
+  width: 140px;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 70px solid #ddd;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.stand:before {
+  content:'';
+  position: absolute;
+  background-color: #888;
+  width: 140px;
+  height: 10px;
+  bottom: 100%;
+}
+.stand:after {
+  content:'';
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  bottom: -75px;
+  background-color: #ddd;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* iframe */
+.iframe-url a {
+  width: inherit;
+  height: inherit;
+}
+.iframe-url a img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+  transition: 2s;
+}
+.iframe-url:hover img {
+  object-position: bottom;
+}

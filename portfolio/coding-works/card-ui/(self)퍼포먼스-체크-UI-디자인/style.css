@@ -1,0 +1,104 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #fff;
+	margin: 0;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.content {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 15px rgba(0,0,0,0.5);
+	text-align: center;
+	background: url('images/new-balance.jpg') no-repeat;
+	background-size: cover;
+	padding: 40px;
+	box-sizing: border-box;
+	color: #fff;
+	border-radius: 5px;
+	padding-top: 80px;
+}
+.content h1 {
+	font-size: 30px;
+}
+.content p {
+	font-weight: bold;
+	font-size: 20px;
+}
+.content-inner {
+	margin-top: 60px;
+}
+.item {
+	display: inline-block;
+	background-color: rgb(255,255,255,0.7);
+	border-radius: 10px;
+	width: 32%;
+	height: 160px;
+	box-sizing: border-box;
+	margin: 2px;
+	padding-top: 30px;
+	color: #000;
+	transition: 0.5s;
+}
+.item h2 {
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+
+.item:hover {
+	color: crimson;
+}
+.btn-more {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #fff;
+	border: 1px solid #fff;
+	padding: 0 10px;
+	border-radius: 3px;
+}
+.btn-testby {
+	color: #fff;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.btn-testby span {
+	transition: 0.5s;
+}
+.btn-buy {
+	background-color: brown;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px;
+	width: 150px;
+	letter-spacing: 6px;
+	text-align: center;
+	border-radius: 3px;
+}
+.xi-cart-add {
+	transform: translateX(-5px);
+	transition: 0.5s;
+	opacity: 0;
+}
+.btn-buy:hover .xi-cart-add {
+	transform: translateX(0);
+	opacity: 1;
+}
+.btn-testby:hover span {
+	color: skyblue;
+}

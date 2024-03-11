@@ -1,0 +1,157 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+/* Common CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Benne', serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Percent Slider */
+.tab-inner {
+  overflow: hidden;
+}
+.tabs {
+  width: 300%;
+  transition: 0.5s;
+}
+
+.tab {
+  width: 33.333%;
+  height: 100vh;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+.tab1 {
+  background: url(images/tab1.jpg) no-repeat center center;
+  background-size: cover;
+}
+.tab2 {
+  background: url(images/tab2.jpg) no-repeat center center;
+  background-size: cover;
+}
+.tab3 {
+  background: url(images/tab3.jpg) no-repeat center center;
+  background-size: cover;
+}
+.heading {
+  color: #fff;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.692);
+  color: #2ed573;
+  padding: 20px;
+  border-radius: 0 50px 50px 0;
+  padding-bottom: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-1000px);
+}
+.tab1 .heading {
+  animation: slide 0.5s linear;
+}
+.tab2 .heading {
+  color: #ff5252;
+}
+.tab3 .heading {
+  color: #ffda79;
+}
+.heading h1 {
+  font-size: 4em;
+}
+.heading p {
+  font-size: 25px;
+  line-height: 1.2em;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.heading a {
+  font-size: 23px;
+  background-color: #fff;
+  padding: 0 30px;
+  border-radius: 30px;
+  display: inline-block;
+  transition: 0.35s;
+  padding-top: 5px;
+}
+.heading a:hover {
+  background-color: transparent;
+  color: #fff;
+  padding: 0;
+  padding-top: 5px;
+  color: #2ed573;
+}
+.tabs .tab2 .heading a:hover {
+  color: #ff5252;
+}
+.tabs .tab3 .heading a:hover {
+  color: #ffda79;
+}
+.btn {
+  bottom: 0;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+.btn label {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 25px;
+  border-radius: 20px;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 23px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Checked Function */
+input[name=tab-menu] {
+  display: none;
+}
+input[id=tab1]:checked ~ .tabs {
+  transform: translateX(0);
+}
+input[id=tab2]:checked ~ .tabs {
+  transform: translateX(-33.333%);
+}
+input[id=tab3]:checked ~ .tabs {
+  transform: translateX(-66.666%);
+}
+input[id=tab1]:checked ~ .btn label[for=tab1] {
+  color: #2ed573;
+  transform: translatey(-4px);
+}
+input[id=tab2]:checked ~ .btn label[for=tab2] {
+  color: #ff5252;
+  transform: translatey(-4px);
+}
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  transform: translatey(-4px);
+  color: #ffda79;
+}
+input[id=tab1]:checked ~ .tabs .tab1 .heading,
+input[id=tab2]:checked ~ .tabs .tab2 .heading,
+input[id=tab3]:checked ~ .tabs .tab3 .heading {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}

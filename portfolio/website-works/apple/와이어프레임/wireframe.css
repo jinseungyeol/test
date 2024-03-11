@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+}
+.container {}
+header {
+	background-color: #333;
+}
+nav {
+	background-color: yellowgreen;
+	width: 1100px;
+	height: 45px;
+	margin: auto;
+}
+section.intro {
+	background-color: #ddd;
+	height: 700px;
+}
+section.branch1 {
+	overflow: hidden;
+}
+section.branch1 > div {
+	height: 450px;
+	float: left;
+	width: 50%;
+}
+section.branch1 > div:nth-child(1) {
+	background-color: #ccc;
+}
+section.branch1 > div:nth-child(2) {
+	background-color: #aaa;
+}
+section.branch2 {
+	overflow: hidden;
+}
+section.branch2 > div {
+	height: 450px;
+	float: left;
+	width: 50%;
+}
+section.branch2 > div:nth-child(1) {
+	background-color: #aaa;
+}
+section.branch2 > div:nth-child(2) {
+	background-color: #ccc;
+}
+section.branch3 {
+	overflow: hidden;
+}
+section.branch3 > div {
+	height: 450px;
+	float: left;
+	width: 50%;
+}
+section.branch3 > div:nth-child(1) {
+	background-color: #ccc;
+}
+section.branch3 > div:nth-child(2) {
+	background-color: #aaa;
+}
+section.formac {
+	background-color: #bbb;
+	height: 400px;
+}
+section.iphonex-video {
+	background-color: #ccc;
+	height: 400px;
+}
+section.macos {
+	background-color: #aaa;
+	height: 400px;
+}
+footer {
+	background-color: #ccc;
+	height: 400px;
+}

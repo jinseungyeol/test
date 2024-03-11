@@ -1,0 +1,53 @@
+/* XEICON */
+@import url('https:////cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+  background-color: #000;
+}
+a {
+  text-decoration: none;
+}
+.sns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sns a {
+  color: #fff;
+  font-size: 20px;
+  margin: 5px;
+  position: relative;
+}
+.sns a:before {
+  content: attr(data-text);
+  position: absolute;
+  width: 60px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ddd;
+  border-radius: 3px;
+  color: #000;
+  font-size: 12px;
+  padding: 2px;
+}
+.sns a:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #ddd;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.sns a:before,
+.sns a:after {
+  display: none;
+}
+.sns a:hover:before,
+.sns a:hover:after {
+  display: block;
+}

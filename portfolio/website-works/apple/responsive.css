@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        padding-top: 0;
+        position: fixed;
+        width: 100%;
+        background-color: #000;
+        z-index: 900;
+    }
+    .logo {
+        float: right;
+        margin-top: 11px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .gnb {
+        width: 250px;
+        height: 100vh;
+        background-color: #222;
+        padding-top: 60px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        transform: translateX(-300px);
+        transition: 0.5s;
+    }
+    .gnb.active {
+        transform: translateX(0);
+    }
+    .gnb a {
+        float: none;
+        display: block;
+        color: #fff;
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+    .trigger {
+        display: block;
+        color: #000;
+    }
+
+    /* Section : Intro */
+        section.intro {
+            background-size: 80%;
+            height: 400px;
+        }
+        section.intro .heading {
+            margin-top: 50px;
+        }
+  
+    /* Section : branch1 */
+    section.branch1 {
+        flex-direction: column;
+    }
+    section.branch1 > div {
+        flex-basis: 400px;
+    }
+    section.branch1 > div:nth-child(1) {
+        background-size: 60%;
+    }
+    section.branch1 > div:nth-child(2) {
+        background-size: 80%;
+        background-position: center bottom 20px;
+    }
+    
+    /* Section : branch2 */
+    section.branch2 {
+        flex-direction: column;
+    }
+    section.branch2 > div {
+        flex-basis: 400px;
+    }
+    section.branch2 > div:nth-child(1) {
+        background-size: 80%;
+        background-position: center bottom 20px;
+    }
+    section.branch2 > div:nth-child(2) {
+        background-size: 80%;
+        background-position: center bottom 20px;
+    }
+    
+    /* Section : branch3 */
+    section.branch3 {
+        flex-direction: column;
+    }
+    section.branch3 > div {
+        flex-basis: 400px;
+    }
+    section.branch3 > div:nth-child(1) {
+        background-size: 80%;
+        background-position: center bottom 20px;
+    }
+    
+    /* Section : formac */
+    section.formac {
+        background-size: 100%;
+        height: 400px;
+        background-position: center bottom 50px;
+    }
+    
+    /* Section : iphoneX-video */
+    section.iphonex-video {
+        width: 100%;
+        height: auto;
+    }
+    section.iphonex-video video {
+        width: 100%;
+        height: auto;
+    }
+    section.iphonex-video .heading {
+        margin-top: 15px;
+    }
+    section.iphonex-video .heading h2 {
+        font-size: 30px;
+    }
+
+    /* Section : macos */
+    .macos-inner {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* footer */
+        footer {
+            padding: 0;
+        }
+    .footer-inner {
+        width: 100%;
+    }
+    .sitemap {
+        flex-direction: column;
+    }
+    .sitemap-title {
+        font-size: 15px;
+        padding: 20px 0;
+        margin: 0 20px;
+        margin-top: 0;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        cursor: pointer;
+    }
+    .sitemap-title:before {
+        content:"\f107";
+        font-family: fontawesome;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        transition: 0.35s;
+    }
+    .sitemap-title.active:before {
+        transform: rotate(180deg);
+    }
+    .sitemap-content {
+        display: none;
+        padding: 20px;
+        margin: 0 20px;
+        padding-left: 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .copyright {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Overlay */
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+}

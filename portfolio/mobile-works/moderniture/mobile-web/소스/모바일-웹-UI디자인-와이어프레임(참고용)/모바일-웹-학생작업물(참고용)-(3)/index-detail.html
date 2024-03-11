@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>detail</title>
+	<!-- Jqurery CDN -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- XE ICON -->
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<!-- Custon CSS -->
+	<link rel="stylesheet" href="style-detail.css">
+	<script src="custom-detail.js"></script>
+</head>
+<body>
+	
+	<div class="container detail">
+		<div class="overlay"></div>
+		<div class="ban-modal">
+			<span>이제부터 리스트에서 제외되며 재생하지 않습니다.</span>
+			<div class="ban-btn">
+				<span>취소</span>
+				<span>확인</span>
+			</div>
+		</div>
+		<div class="detail-info-modal">
+			<div>
+				<h4>Daffodils<span>Adam Snow</span></h4>
+				<i class="xi-close-thin close-btn"></i>
+			</div>
+			<div class="detail-info-con">
+				<a href="#none"><i class="xi-music"></i>곡 정보</a>
+				<a href="#none"><i class="xi-album"></i>앨범 정보</a>
+				<a href="#none"><i class="xi-microphone-o"></i>아티스트 정보</a>
+				<a href="#none"><i class="xi-book-o"></i>내 리스트에 담기 정보</a>
+				<a href="#none"><i class="xi-search"></i>더 알아보기 JUMP</a>
+				<a href="#none"><i class="xi-download"></i>저장하기</a>
+				<a href="#none"><i class="xi-link"></i>링크 공유하기</a>
+				<a href="#none"><i class="xi-trash-o"></i>삭제</a>
+			</div>
+		</div>
+		<header>
+			<i class="xi-angle-left" onClick='window.history.back()'></i>
+			<i class="xi-ellipsis-v detail-info"></i>
+		</header>
+		<div class="detail-desc">
+			<h3>Daffodils <small>Adam Snow <i class="xi-angle-right-thin"></i></small></h3>
+		</div>
+		<a href="#none"><img src="images/detail/thum.png"></a>
+		<p>
+			I may not have mansion, I haven't any land
+			Not even a paper dollar to crinkle in my hands
+			But I can show you morning on a thousand hills
+			And kiss you and give you seven daffodils
+		</p>
+		<div class="detail-btn">
+			<div>
+				<i class="xi-heart-o"></i>
+			</div>
+			<button id="playpausebtn"></button>
+			<i class="xi-ban"></i>
+		</div>
+	</div>
+</body>
+</html>

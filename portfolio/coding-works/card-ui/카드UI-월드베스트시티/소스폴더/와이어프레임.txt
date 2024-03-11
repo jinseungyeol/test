@@ -1,0 +1,15 @@
+section
+	.section-inner
+		h1.heading
+		.items
+			.item
+				.photo
+				.profile
+					h3
+					p
+					.author
+						span.face
+						span.comment
+					a.btn-explore
+					
+					

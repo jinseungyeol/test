@@ -1,0 +1,13 @@
+.profile.dark
+	a.btn-back > font-icon
+	.icons
+		a.btn-like > font-icon
+		a.btn-trigger > font-icon
+	.face > font-icon
+	h1 > span
+	p > a
+	.sns
+		(a > font-icon) * 3
+	a.btn-hire
+	.status
+		(span > font-icon, big) * 2

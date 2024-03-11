@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="testimonial">
+    <h1><span>CodingWorks</span> Publishing Online Class with Inflearn</h1>
+    <div class="users">
+      <img class="active" src="images/face-01.jpg" data-alt="tab1">
+      <img src="images/face-02.jpg" data-alt="tab2">
+      <img src="images/face-03.jpg" data-alt="tab3">
+      <img src="images/face-04.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial-content">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo corporis ab nobis deleniti blanditiis consequuntur tenetur facilis, harum quis fugiat delectus porro similique repellendus nihil quasi illum debitis animi id? Pariatur expedita dolorem perferendis illo, nulla eos quos impedit animi dignissimos explicabo libero sint quia facere, aperiam iure placeat.
+        </p>
+        <b>SeungYeol, Web Designer</b>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo corporis ab nobis deleniti blanditiis consequuntur tenetur facilis, harum quis fugiat delectus porro similique repellendus nihil quasi illum debitis animi id? Pariatur expedita dolorem perferendis illo, nulla eos quos impedit animi dignissimos explicabo libero sint quia facere, aperiam iure placeat.
+        </p>
+        <b>Chris, Web Designer</b>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo corporis ab nobis deleniti blanditiis consequuntur tenetur facilis, harum quis fugiat delectus porro similique repellendus nihil quasi illum debitis animi id? Pariatur expedita dolorem perferendis illo, nulla eos quos impedit animi dignissimos explicabo libero sint quia facere, aperiam iure placeat.
+        </p>
+        <b>Steve, Web Designer</b>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto illo corporis ab nobis deleniti blanditiis consequuntur tenetur facilis, harum quis fugiat delectus porro similique repellendus nihil quasi illum debitis animi id? Pariatur expedita dolorem perferendis illo, nulla eos quos impedit animi dignissimos explicabo libero sint quia facere, aperiam iure placeat.
+        </p>
+        <b>Rora, Web Designer</b>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // User Face Image Checked
+    $('.users img').click(function(){
+
+      var tabContent = $(this).attr('data-alt')
+
+      // $('.users img').removeClass('active')
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+
+      $('.testimonial .content').removeClass('active')
+      // $('#tab1').addClass('active')
+      // $('#' + $(this).attr('data-alt')).addClass('actvie')
+      $('#' + tabContent).addClass('active')
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Default CSS */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6em;
+  color: #333;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  transition: 0.5s;
+}
+/* Header */
+nav {
+  width: 1300px;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+}
+.logo {
+  float: left;
+  margin-top: 7px;
+}
+.gnb {
+  float: right;
+  padding-top: 35px;
+  margin-right: 60px;
+  position: relative;
+}
+.gnb a {
+  font-weight: 500;
+  padding-right: 50px;
+}
+label[for=button] {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  animation: mode 1s 1s linear both;
+}
+label[for=button]:before {
+  content: '\f186';
+  font-family: fontawesome;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+@keyframes mode {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Section */
+section {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.section-inner {
+  width: 1300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.text {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+.text h1 {
+  font-size: 40px;
+  line-height: 1em;
+  margin-top: 50px;
+}
+.text h1 span {
+  color: #c12f30;
+}
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.btn-learn {
+  padding: 10px 20px;
+  background-color: #c12f30;
+  color: #fff;
+  border-radius: 20px;
+}
+.sns {
+  margin-top: 200px;
+}
+.sns a {
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding-top: 2px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000;
+  margin-right: 5px;
+}
+.photo {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Checked Function */
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox]:checked ~ .container {
+  background-color: #692d2d;
+}
+input[type=checkbox]:checked ~ .container label[for=button]:before {
+  content:"\f185";
+  background-color: #fff;
+  color: #000;
+}
+input[type=checkbox]:checked ~ .container .gnb a,
+input[type=checkbox]:checked ~ .container .text h1,
+input[type=checkbox]:checked ~ .container .text p {
+  color: #fff;
+}
+

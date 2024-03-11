@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <!-- XEICON -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <script src="custom.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Header -->
+    <section class="cart-header">
+      <a href="javascript:history.back(-1)"><i class="xi-angle-left"></i></a>
+      <h1>Shopping Cart</h1>
+      <span>편집</span>
+      <em>완료</em>
+    </section>
+
+    <!-- Content -->
+    <section class="cart-content">
+      <h1>3 Items</h1>
+      <div class="cart-items">
+        <div class="cart-items-inner">
+          <div class="cart-item">
+            <div class="cart-photo">
+              <img src="images/cart-01.png" alt="">
+            </div>
+            <div class="cart-info">
+              <div class="cart-name">
+                <h2>Lily Chair</h2>
+                <p>￦ 540,000</p>
+                <b>색상 :</b>
+              </div>
+              <div class="btn-trash">
+                <a href="#none"><i class="xi-trash-o"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-items-inner">
+          <div class="cart-item">
+            <div class="cart-photo">
+              <img src="images/cart-02.png" alt="">
+            </div>
+            <div class="cart-info">
+              <div class="cart-name">
+                <h2>South Chair</h2>
+                <p>￦ 1,100,000</p>
+                <b>색상 :</b>
+              </div>
+              <div class="btn-trash">
+                <a href="#none"><i class="xi-trash-o"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart-items-inner">
+          <div class="cart-item">
+            <div class="cart-photo">
+              <img src="images/cart-03.png" alt="">
+            </div>
+            <div class="cart-info">
+              <div class="cart-name">
+                <h2>Lily Chair</h2>
+                <p>￦ 540,000</p>
+                <b>색상 :</b>
+              </div>
+              <div class="btn-trash">
+                <a href="#none"><i class="xi-trash-o"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cart-price">
+        <div class="cart-product-price">
+          <h1>상품 금액</h1>
+          <h2>￦ 2,040,000</h2>
+        </div>
+        <div class="cart-delivery">
+          <h1>배송비</h1>
+          <h2>￦ 0</h2>
+        </div>
+        <div class="cart-all-price">
+          <h1>합계</h1>
+          <h2>￦ 2,040,000</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Btn Buy -->
+    <div class="cart-btn-buy">
+      <a href="#none">구매하기</a>
+    </div>
+
+    <!-- Cart Caption -->
+    <div class="cart-caption"></div>
+
+    <!-- Include Fixed Footer -->
+    <div class="include-footer"></div>
+    
+  </div>
+
+</body>
+</html>

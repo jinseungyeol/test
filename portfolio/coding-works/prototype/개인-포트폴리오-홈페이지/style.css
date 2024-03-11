@@ -1,0 +1,475 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+html {
+  scroll-behavior: smooth !important;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: 'Benne', serif;
+  font-size: 16px;
+  margin: 0;
+  color: #222;
+  line-height: 1.5em;
+  font-weight: 300;
+    background-color: #f8f8f8;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Reset CSS */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+button,
+input[type=button],
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+
+/* Fullscreen Toggle Navigation */
+.trigger {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 100;
+}
+.trigger i {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.589);
+  cursor: pointer;
+  transition: 0.35s;
+}
+.trigger.active i {
+  background-color: #5aa87f;
+  transform: rotate(315deg);
+} 
+.trigger i:active {
+  transform: scale(0.7);
+  box-shadow: none;
+  transform: rotate(315deg);
+}
+
+/* Overlay - 좌우로 오버레이 만들기 */
+/* .overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+.overlay:before,
+.overlay:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #000;
+  transition: 0.35s;
+}
+.overlay:before {
+  left: 0;
+}
+.overlay:after {
+  right: 0;
+  background-color: #000;
+}
+.overlay.active:before,
+.overlay.active:after {
+  width: 50%;
+} */
+
+/* Overlay - 안에서밖으로 좌우 오버레이 만들기 */
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay:before,
+.overlay:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.35s;
+}
+.overlay:before {
+  left: 50%;
+}
+.overlay:after {
+  right: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay.active,
+.overlay.active:before,
+.overlay.active:after {
+  width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.gnb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 3.5em;
+  opacity: 0;
+  transition: 0.35s;
+  /* visibility: hidden; */
+  pointer-events: none;
+  z-index: 1000;
+}
+.gnb.active {
+  opacity: 1;
+  /* visibility: visible; */
+  pointer-events: all;
+}
+.gnb li {}
+.gnb li a {
+  color: #fff;
+  font-size: 4em;
+  text-transform: capitalize;
+  position: relative;
+  line-height: 1.3em;
+}
+.gnb li a:before {
+  content: '';
+  position: absolute;
+  background-color: #5aa87f;
+  height: 15px;
+  width: 0;
+  bottom: 40px;
+  z-index: -1;
+  transition: 0.35s;
+}
+.gnb li a:hover:before {
+  width: 100%;
+}
+/* Section */
+section {
+  height: 100vh;
+}
+section:nth-child(even) {
+  background-color: #fff;
+}
+section h1 {
+  /*position: absolute;
+  top: 7%;
+  left: 5%;
+  font-size: 4em;
+  text-align: center;
+  text-transform: capitalize;*/
+}
+
+section.home {
+    background: url('images/product-03.jpg') no-repeat left 5% top 46%;
+}
+section.home:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    top: 32%;
+    z-index: -1;
+}
+.home h2 {
+    position: absolute;
+    top: 27%;
+    left: 30%;
+    font-size: 5em;
+    font-weight: 500;
+    color: #5aa87f;
+}
+.home-text {
+    height: 100vh;
+    right: 5%;
+    position: absolute;
+    text-align: center;
+}
+.home-text:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 35%;
+    background-color: #000;
+    right: 49%;
+}
+.home-text p {
+    font-size: 1.7em;
+    position: relative;
+    top: 73%;
+    line-height: 1.5em;
+    font-weight: 400;
+    right: 0%;
+}
+.home img {
+    position: absolute;
+    right: 19%;
+    top: 35%;
+    border: 20px solid #f1e2d2;
+    width: 300px;
+}
+.introduction-inner {
+    width: 1600px;
+    margin: auto;
+    position: relative;
+}
+.introduction-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #222;
+    top: 160px;
+}
+.introduction-inner h1 {
+    font-size: 4em;
+    line-height: 1em;
+    padding-top: 50px;
+    color: #5aa87f;
+}
+
+.profile {
+    margin-top: 200px;
+    overflow: hidden;
+}
+.day > * {
+    display: inline-block;
+    font-size: 30px;
+}
+.day p {
+    margin-right: 335px;
+}
+.day div {
+    width: 500px;
+    font-size: 29px;
+    position: absolute;
+    right: 0;
+    top: 41%;
+    line-height: 1.3em;
+    text-align: center
+}
+.day-photo {
+    margin-top: 50px;
+    
+}
+
+.skills {
+    position: relative;
+}
+.skills h1 {
+  font-size: 4em;
+  text-align: center;
+  padding-top: 50px;
+  color: #5aa87f;
+}
+.skills-frame {
+  width: 1500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow: hidden;
+  height: 900px;
+  margin-top: 20px;
+}
+
+input[name=technique] {
+  display: none;
+}
+input[id=technique-01]:checked ~ .btn-skill label[for=technique-01], 
+input[id=technique-02]:checked ~ .btn-skill label[for=technique-02], 
+input[id=technique-03]:checked ~ .btn-skill label[for=technique-03] {
+  background-color: #5aa87f;
+  width: 30px;
+  border-radius: 10px;
+}
+input[id=technique-02]:checked ~ .skill-inner {
+  transform: translate(-1500px);
+}
+input[id=technique-03]:checked ~ .skill-inner {
+  transform: translate(-3000px);
+}
+.btn-skill {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #fff;
+}
+.btn-skill div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+}
+.btn-skill label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  transition: 0.5s;
+  margin: 10px;
+}
+.skill-inner {
+  width: 4500px;
+  transition: 0.5s;
+}
+.skills-content {
+  float: left;
+  overflow: hidden;
+  margin-top: 100px;
+  padding: 30px;
+  width: 1500px;
+  background-color: #fff;
+}
+.skills-content > div {
+  margin: 0 50px;
+  vertical-align: top;
+}
+.skills-photo {
+  display: inline-block;
+}
+.skills-photo img {
+  display: block;
+  width: 500px;
+  float: right;
+} 
+.skills-text {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  padding-top: 5px;
+}
+.skills-text span{
+  font-size: 30px;
+}
+.skills-text span p {
+  font-size: 25px;
+}
+.skills-text h2 {
+  font-size: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.skills-text em {
+  font-size: 20px;
+  line-height: 1.6em;
+}
+.works-inner {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+}
+.works-inner li{
+  flex: 1;
+  height: 100vh;
+  border: 5px solid #000;
+  box-sizing: border-box;
+  transition: 0.5s;
+  overflow: hidden;
+  position: relative;
+}
+.works li:last-child {
+  border: none;
+}
+.works li:hover {
+  flex: 2;
+}
+.works li:nth-child(1) {
+  background: url(images/work-01.jpg) no-repeat center center;
+}
+.works li:nth-child(2) {
+  background: url(images/work-02.jpg) no-repeat center center;
+}
+.works li:nth-child(3) {
+  background: url(images/work-03.jpg) no-repeat center center;
+}
+.works li:nth-child(4) {
+  background: url(images/work-04.jpg) no-repeat center center;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  border-left: 5px solid #000;
+}
+.works-inner li:hover .works-content {
+  bottom: 0;
+}
+.works-content {
+  color: #fff;
+  background-color: #000;
+  position: absolute;
+  bottom: -500px;
+  transition: 0.5s;
+  padding: 0 30px;
+  width: 100%;
+}
+.works-content h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #5aa87f;
+  display: inline-block;
+  position: relative;
+  padding-top: 30px;
+}
+.works-content h2:before {
+  content: '';
+  position: absolute;
+  background-color: #5aa87f;
+  width: 100%;
+  height: 5px;
+  top: 0;
+}
+.works-content p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  section {
+    height: auto;
+  }
+  section h1 {
+    position: static;
+    transform: translate(0);
+  }
+}

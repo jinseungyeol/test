@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>photoshop-works</title>
+  <!-- JQUERY CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="photoshop-works.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="open-navi">
+      <i class="xi-arrow-right"></i>
+    </div>
+    <div class="close-navi">
+      <i class="xi-arrow-left"></i>
+    </div>
+    <div class="front">
+      <img src="mobile-web/포토샵작업/와이어프레임.png">
+    </div>
+    <div class="back">
+      <img src="mobile-web/포토샵작업/UI-디자인.png">
+    </div>
+  </div>
+
+  <script>
+    $('.open-navi').click(function(){
+      $('.open-navi, .close-navi').addClass('active')
+      $('.back').fadeIn()
+      $('.front').fadeOut()
+    })
+    $('.close-navi').click(function(){
+      $('.open-navi, .close-navi').removeClass('active')
+      $('.back').fadeOut()
+      $('.front').fadeIn()
+    })
+  </script>
+
+</body>
+</html>

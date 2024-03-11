@@ -1,0 +1,53 @@
+section.best-seller
+	.best-seller-heading
+		h1
+		a > font
+	.best-seller-items	
+		.best-seller-item
+			.best-seller-product
+				.best-seller-photo
+					img
+				.best-seller-info
+					.best-seller-name
+						b
+						p
+					.best-seller-btn-buy
+						a
+
+
+section.review
+	.review-heading
+		h1
+		a					
+	.review-content
+		.review-profile
+			img
+			.review-info
+				.review-name
+					h1
+					p
+				.review-day
+					span > b
+		.review-photo
+			div
+				img
+		.review-like
+			.review-star
+				div
+					font*5
+				span > font	
+			p
+			
+
+
+section.footer	
+		a
+		.footer-content
+			.footer-info
+				span
+				p
+				span
+			.footer-follow
+				b
+				.sns
+					a>font *2

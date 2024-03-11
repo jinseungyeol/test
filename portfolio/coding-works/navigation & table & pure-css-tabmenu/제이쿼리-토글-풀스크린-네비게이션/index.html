@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- XEICON -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="toggle">
+      <i class="xi-plus"></i>
+    </div>
+    <div class="overlay"></div>
+
+    <ul class="gnb">
+      <li><a href="#none">Home</a></li>
+      <li><a href="#none">About</a></li>
+      <li><a href="#none">Service</a></li>
+      <li><a href="#none">Team</a></li>
+      <li><a href="#none">Portfolio</a></li>
+      <li><a href="#none">contact</a></li>
+    </ul>
+
+    <script>
+      $('.toggle').click(function(){
+        $('.overlay, .toggle, .gnb').toggleClass('active')
+      })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+@media (max-width: 768px) {
+  /* ############################## Section : Header ############################## */
+  .header-inner {
+    width: 100%;
+  }
+  .navi {
+    float: right;
+    width: 50px;
+    height: 50px;
+  }
+  .navi div {
+    height: 15px;
+  }
+  .navi:hover {
+    background-color: #218c74;
+  }
+
+  /* GNB */
+  .gnb li a {
+    font-size: 30px;
+  }
+
+  /* ############################## Section : About ############################## */
+  section.about {
+    margin-bottom: 20px;
+  }
+  .about-inner {
+    width: 100%;
+    display: block;
+  }
+
+  /* About Content */
+  .about-content {
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
+  .about-content h1 {
+    font-size: 30px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 90px;
+    color: #fff;
+    padding-left: 40px;
+  }
+  .about-content h1:before {
+    left: 40px;
+    bottom: -1.2em;
+  }
+  .about-content h1:after {
+    width: 30px;
+    height: 2px;
+    left: 0;
+    top: 18px;
+  }
+  .about-content p {
+    text-align: center;
+  }
+  .about-photo {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  
+
+  /* ############################## Section : Skill ############################## */
+  section.skill:before {
+    z-index: -1;
+    font-size: 200px;
+    left: -325px;
+    top: 32%;
+  }
+  .skill-inner {
+    width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 0;
+  }
+  .skill-inner h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .skill-items {
+    display: block;
+    padding-bottom: 50px;
+  }
+  .skill-item {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .skill-item h2 {
+    margin-bottom: 10px;
+  }
+
+  /* Editor */
+  .editor {
+    width: 100%;
+    display: block;
+  }
+  .editor p {
+    text-align: center;
+  }
+  .editor-logo {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  /* ############################## Section : Mobile ############################## */
+  .mobile {
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .mobile:before {
+    background-position: center left -80px;
+    z-index: -1;
+  }
+  .mobile-inner {
+    width: 100%;
+  }
+  .mobile-content {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .mobile-content h1 {
+    font-size: 30px;
+    color: #fff;
+  }
+  .mobile-content h1:before {
+    background-color: #218c74;
+  }
+  .mobile-content p {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .mobile-info {
+    margin-bottom: 20px;
+  }
+  .mobile-list a {
+    list-style: none;
+    margin: 0;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .mobile-list-answer span {
+    color: #fff;
+  }
+  .mobile-list-answer span:before {
+    background-color: #fff;
+  }
+  .btn-mobile a {
+    margin-right: 10px;
+  }
+  .btn-mobile a:last-child {
+    margin-right: 0;
+  }
+
+  /* ############################## Section : Web ############################## */
+  .web-content {
+    margin: 0 20px;
+  }
+  .web-inner {
+    width: 100%;
+  }
+  .web-heading {
+    padding-bottom: 30px;
+  }
+  .web-heading h1 {
+    float: none;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .web-btn {
+    float: none;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+  }
+  .web-btn label {
+    margin-left: 0;
+  }
+  .web-portfolio {
+    height: 920px;
+  }
+  .web-info {
+    display: block;
+    width: 100%;
+  }
+  .web-desc {
+    padding-left: 0;
+    padding: 50px 0;
+  }
+  .web-desc h1 {
+    padding-left: 40px;
+    font-size: 30px;
+  }
+  .web-desc h1:before {
+    left: 0;
+  }
+  .btn-ver {
+    order: 1;
+    margin-bottom: 30px;
+  }
+  .web-desc h1 {
+    order: 2;
+  }
+  .web-desc p {
+    order: 3;
+  }
+  .web-desc ul {
+    order: 4;
+  }
+  /* ############################# Section : Practical ############################# */
+  .practical-inner {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+  .practical-heading {
+    padding-bottom: 30px;
+  }
+  .practical-heading h1 {
+    font-size: 30px;
+  }
+  .practical-content h1:before {
+    bottom: -10px;
+  }
+  .practical-content h1:after {
+    width: 140px;
+  }
+  .practical-frame {
+    margin: 50px 0;
+  }
+  .practical-frame:last-child h2:before {
+    top: 16px;
+  }
+  
+  /* ############################## Section : Epilogue ############################## */
+  .epilogue-inner {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .epilogue-content {
+    display: block;
+  }
+  .epilogue-heading h1 {
+    font-size: 30px;
+    padding-left: 40px;
+  }
+  .epilogue-heading h1:before {
+    height: 2px;
+    width: 30px;
+    top: 16px;
+    left: 0;
+  }
+  .epilogue-heading p {
+    font-size: 40px;
+  }
+  .epilogue-text {
+    margin-top: 30px;
+  }
+
+  /* Slick Slider Custom CSS */
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+}

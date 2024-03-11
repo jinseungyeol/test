@@ -1,0 +1,35 @@
+.detail-header
+	a
+	.detail-share
+		a>font * 2
+.detail-photo
+	img
+.detail-info
+	.detail-name
+		h1
+		span
+		b
+	.detail-heart
+		font
+		.detail-star
+			font *5
+			
+.together
+	h1
+	.together-items
+		div
+			img
+			
+
+.detail-caption
+	a > font
+	.detail-caption-info
+		h1
+		h2
+		b
+	.detail-caption-day
+		p
+		select
+	.detail-caption-cart
+		a.btn-cart
+		a.btn-direct

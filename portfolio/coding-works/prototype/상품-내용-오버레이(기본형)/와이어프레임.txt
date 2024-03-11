@@ -1,0 +1,15 @@
+section
+	.items
+		.item
+			.photo
+				img
+				.caption
+					p
+					a
+			.desc
+				p > b
+				p > s
+				.badge-group
+					span.badge.new
+					span.badge.sale
+		

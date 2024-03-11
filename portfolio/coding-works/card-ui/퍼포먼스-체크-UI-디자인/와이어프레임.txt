@@ -1,0 +1,9 @@
+.content
+	h1
+	p
+	.content-inner
+		.item
+			h2 > em
+			span
+	a.btn-new
+	a.btn-testby

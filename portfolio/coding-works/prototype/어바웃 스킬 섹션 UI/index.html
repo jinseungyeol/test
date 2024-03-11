@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>어바웃-스킬-섹션-UI</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="">
+        </div>
+        <div class="gnb">
+          <a href="#none">ABOUT</a>
+          <a href="#none">SERVICES</a>
+          <a href="#none">WORK</a>
+          <a href="#none">TEAM</a>
+          <a href="#none">BLOG</a>
+          <a href="#none">CONTACT</a>
+        </div>
+        <div class="together">
+          <span>LET'S WORK TOGETHER?</span>
+          <a href="#none">START NOW</a>
+        </div>
+        <div class="trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <section class="about">
+      <div class="about-inner">
+        <div class="about-info">
+          <h1>ABOUT ME</h1>
+          <b>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero a repellendus assumenda blanditiis repellat? Veniam, officiis autem tempora repellendus.
+          </b>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis aspernatur impedit. Molestias nesciunt officia accusantium rem, alias corrupti nihil laboriosam ipsam, ipsa aspernatur qui commodi recusandae cupiditate est nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi veritatis aspernatur impedit. Molestias nesciunt officia accusantium rem, alias corrupti nihil laboriosam ipsam, ipsa aspernatur qui commodi recusandae cupiditate est nulla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique amet ipsum expedita consequuntur ex nulla corrupti nam, nemo hic. Dolorem.
+          </p>
+          <a href="#none">OUR SERVICES</a>
+        </div>
+        <div class="skill-info">
+          <div class="items">
+            <div>
+              <img src="images/skill-01.png" alt="">
+              <h2>WE'RE CREATIVE</h2>
+              <p>
+                The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+              </p>
+            </div>
+            <div>
+              <img src="images/skill-02.png" alt="">
+              <h2>WE'RE CREATIVE</h2>
+              <p>
+                Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+              </p>
+            </div>
+          </div>
+          <div class="items">
+            <div>
+              <img src="images/skill-03.png" alt="">
+              <h2>WE'RE CREATIVE</h2>
+              <p>
+                JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+              </p>
+            </div>
+            <div>
+              <img src="images/skill-04.png" alt="">
+              <img src="images/skill-05.png" alt="">
+              <h2>WE'RE CREATIVE</h2>
+              <p>
+                Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. An illustrator is an artist who specializes in enhancing writing or elucidating concepts by providing a visual representation that corresponds to the content of the associated text or idea.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="overlay"></div>
+
+  <script>
+    $('.trigger').click(function(){
+      $('.trigger, .gnb, .overlay, body').toggleClass('active')
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.6em;
+  font-weight: 300;
+  color: #3c4043;
+}
+a {
+  text-decoration: none;
+  color: #3c4043;
+}
+
+/* Common CSS */
+.btn-download {
+  background-color: dodgerblue;
+  color: #fff;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 3px;
+  transition: 0.5s;
+  font-weight: 500;
+}
+.btn-download:hover {
+  background-color: #174EA6;
+}
+
+/* Header */
+header {
+  height: 65px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+.logo {
+  float: left;
+}
+.download {
+  float: right;
+  padding-top: 2px;
+  transform: translateX(200px);
+  transition: 0.5s;
+}
+.download.active {
+  transform: translateX(0);
+}
+
+/* Section : Welcome */
+section.welcome {
+  height: 100vh;
+  background: #f8f9fb url(images/hero-back-large-desktop.jpg) no-repeat center center;
+  object-fit: cover;
+  position: relative;
+}
+.next-section {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.35s;
+}
+.next-section i {
+  animation: under 1s linear infinite;
+}
+.next-section:hover {
+  background-color: #F1F3F4;
+}
+
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 630px;
+  text-align: center;
+  font-weight: 400;
+}
+.heading img {
+  width: 75px;
+}
+.heading h1 {
+  font-size: 52px;
+  line-height: 1.2em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.heading p {
+  margin-bottom: 30px;
+}
+.download-content span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.download-content a {
+  width: 180px;
+}
+.statics p {
+  font-size: 12px;
+}
+.statics p a {
+  color: royalblue;
+}
+.statics label {
+  vertical-align: middle;
+}
+
+/* Section : Feature */
+section.feature {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.inner {
+  width: 1250px;
+  margin: auto;
+  overflow: hidden;
+  /* display: flex;
+  align-items: center; */
+}
+.inner > div {
+  float: left;
+  width: 50%;
+}
+.inner .desc {
+  padding: 0 115px;
+  padding-top: 95px;
+}
+.inner .desc h1 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1.1em;
+  margin: 0;
+  margin-top: 10px;
+}
+.inner .desc p {
+  margin-bottom: 40px;
+}
+.inner .desc a {
+  color: royalblue;
+  transition: 0.35s;
+}
+.inner .desc a:hover {
+  color: #174EA6;
+}
+.inner .desc a:hover i {
+  transform: translateX(5px);
+}
+.inner .desc a i {
+  margin-left: 5px;
+  transition: 0.35s;
+}
+
+/* Collaction */
+.callaction {
+  height: 280px;
+  background: #4285F4 url(images/download-bg-desktop.svg) no-repeat center center;
+  background-size: cover;
+  padding-top: 100px;
+}
+.callaction-inner {
+  text-align: center;
+  width: 600px;
+  margin: auto;
+}
+.callaction-inner h1 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+}
+.callaction-inner .btn-download {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.callaction-inner .btn-download:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* footer */
+footer {
+  background-color: #F9FAFE;
+  font-weight: 400;
+}
+.footer-inner {
+  width: 1250px;
+  margin: auto;
+}
+.sns-outer {
+  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+}
+.sns-outer span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.sns a {
+  font-size: 30px;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+/* Sitemap */
+.sitemap {
+  padding: 50px 0;
+}
+.link-items {
+  overflow: hidden;
+  /* display: flex; */
+}
+.link-item {
+  float: left;
+  width: 20%;
+  /* flex: 1; */
+}
+.link-item-title {
+  font-size: 18px;
+  pointer-events: none;
+}
+.link-item-content {
+  font-size: 14px;
+}
+.link-item-content a {
+  display: block;
+  line-height: 3em;
+  font-weight: 300;
+}
+.link-item-content a:hover {
+  color: #000;
+}
+
+/* Copyright */
+.copyright {
+  border-top: 1px solid #ddd;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.logo-footer {
+  float: left;
+}
+.logo-footer img {
+  margin-right: 30px;
+}
+.policy {
+  float: left;
+  padding-top: 10px;
+}
+.policy a {
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 14px;
+}
+.policy a:nth-child(2) {
+  position: relative;
+}
+.policy a:nth-child(2):before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color:#ccc;
+  top: 0;
+  left: -10px;
+}
+.policy a:nth-child(2):after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color:#ccc;
+  top: 0;
+  right: -10px;
+}
+.policy a:hover {
+  color: #000;
+}
+.language {
+  float: right;
+}
+.language a {
+  margin-right: 5px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+.language span a {
+  font-weight: 300;
+  vertical-align: middle;
+  font-size: 16px;
+}
+.language span a:hover {
+  color: #000;
+}
+.language select {
+  border: none;
+  font-weight: 300;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+}
+
+@keyframes under {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% (
+    transform: translateY(0);
+  )
+}

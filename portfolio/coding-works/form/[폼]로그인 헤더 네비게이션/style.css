@@ -1,0 +1,313 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Common CSS */
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #222;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Reset CSS */
+button,
+input {
+  outline: none;
+  cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* Header */
+header {}
+.lnb-outer {
+  background-color: #aaa69d;
+  padding: 5px 0;
+}
+.lnb-inner {
+  overflow: hidden;
+  width: 1400px;
+  margin: auto;
+}
+.lnb {
+  float: right;
+}
+.lnb a {
+  color: #fff;
+  margin: 5px;
+  transition: 0.35s;
+}
+.lnb a:hover:not(em) {
+  color: #218c74;
+}
+.lnb a em{
+  color: #444;
+  margin-right: 3px;
+}
+
+.gnb-outer {
+  border-bottom: 7px solid #aaa69d;
+}
+.gnb-inner {
+  width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  padding: 15px 0;
+}
+.logo,
+.gnb {
+  float: left;
+  padding-top: 6px;
+}
+.logo img {
+  width: 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.gnb a {
+  text-transform: capitalize;
+  font-weight: 600;
+  margin: 5px;
+  vertical-align: middle;
+  transition: 0.35s;
+}
+.gnb a:hover {
+  color: #218c74;
+}
+.search {
+  float: right;
+  font-weight: 600;
+}
+.search span {
+  text-transform: capitalize;
+  color: #218c74;
+  margin-right: 5px;
+}
+.btn-signup {
+  border: none;
+  padding: 10px;
+  background-color: #218c74;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+.btn-signup:hover {
+  background-color: #000;
+  color: #fff;
+}
+.search-input {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+}
+.search-input::placeholder {
+  transition: 0.35s;
+  font-style: italic;
+  color: #bbb;
+}
+.search-input:focus::placeholder {
+  opacity: 0;
+}
+.btn-search {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-left: -5px;
+  border-radius: 0 5px 5px 0;
+}
+.btn-search i {
+  color: #218c74;
+  transition: 0.5s;
+}
+.btn-search:hover i {
+  color: #000;
+}
+
+/* Section */
+section {
+  position: relative;
+  height: calc(100vh - 110px);
+}
+.section-inner {
+  width: 1400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.section-inner h1 {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #218c74;
+  padding-bottom: 20px;
+}
+.login-outer > div {
+  float: left;
+  height: 400px;
+}
+.login {
+  width: 60%;
+}
+.account {
+  width: 40%;
+}
+
+/* Login */
+.login {
+  padding: 20px;
+}
+.login-inner {
+  padding: 20px;
+  background-color: #eee;
+}
+.login span {
+  display: block;
+  margin: 10px 0;
+}
+.login input[type=email],
+.login input[type=password] {
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+  padding-left: 40px;
+  transition: 0.5s;
+  position: relative;
+}
+.login input[type=email] {
+  background: #fff url('images/email.png') no-repeat;
+  background-size: 20px;
+  background-position: center left 10px;
+}
+.login input[type=password] {
+  background: #fff url('images/lock.png') no-repeat;
+  background-size: 15px;
+  background-position: center left 10px;
+}
+.login input[type=email]:focus,
+.login input[type=password]:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.login input[type=email]::placeholder,
+.login input[type=password]::placeholder {
+  transition: 0.5s;
+}
+.login input[type=email]:focus::placeholder,
+.login input[type=password]:focus::placeholder {
+  opacity: 0;
+}
+.save-info {
+  overflow: hidden;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+.save-info label {
+  float: left;
+}
+.login input[type=radio] {
+  display: none;
+}
+.save-info label em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  vertical-align: middle;
+  background: url(images/check-icon.png);
+  background-position: left;
+  margin-top: 3px;
+  margin-right: 3px;
+}
+.save-info a {
+  float: right;
+  color: #218c74;
+  transition: 0.5s;
+}
+.save-info a:hover {
+  color: #000;
+}
+.btn-login {
+  background-color: #fff;
+  padding: 10px 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  background-color: #218c74;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: 0.35s;
+}
+.btn-login:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Account */
+.account {
+  padding: 40px;
+}
+.account-info {
+}
+.account-info h3 {}
+.account-info span {
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+.account-info span:before {
+  content: '';
+  position: absolute;
+  background: url('images/check.png') no-repeat center center;
+  top: 0;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+}
+.btn-create {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border: none;
+  font-size: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+  background-image: linear-gradient(135deg, #f7f1e3 0%, #e2d1c3 100%);
+  transition: 0.35s;
+}
+.btn-create:hover {
+  color: #fff;
+  background-image: linear-gradient(0deg, #f7f1e3 0%, #e2d1c3 100%);
+}
+.account a {
+  display: block;
+  text-align: center;
+  margin: 5px 0;
+  color: #218c74;
+  transition: 0.5s;
+}
+.account a:nth-of-type(1) {
+  margin-top: 30px;
+}
+.account > a:hover {
+  color: #000;
+}
+
+/* Checked Function */
+.login input[type=radio]:checked + em {
+  background-position: right;
+}

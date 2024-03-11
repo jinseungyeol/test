@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>제이쿼리 트랜지션 화면전환</title>
+  <link rel="stylesheet" href="prototype.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="open-navi">
+      <i class="xi-arrow-right"></i>
+    </div>
+    <div class="close-navi">
+      <i class="xi-arrow-left"></i>
+    </div>
+    <div class="front">div.front</div>
+    <div class="back">div.back</div>
+  </div>
+
+  <script>
+    $('.open-navi').click(function(){
+      $('.open-navi, .close-navi').addClass('active')
+      $('.front').fadeOut()
+      $('.back').fadeIn()
+    })
+    $('.close-navi').click(function(){
+      $('.open-navi, .close-navi').removeClass('active')
+      $('.back').fadeOut()
+      $('.front').fadeIn()
+    })
+  </script>
+
+</body>
+</html>

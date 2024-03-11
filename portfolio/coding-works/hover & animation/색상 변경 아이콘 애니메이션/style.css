@@ -1,0 +1,53 @@
+/* FontAwesome 4.7 */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+	background-color: #222;
+}
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.frame i {
+	color: #fff;
+	font-size: 10em;
+	margin: 15px;
+	text-shadow: 0 0 30px royalblue,
+				 0 0 60px royalblue,
+				 0 0 90px royalblue,
+				 0 0 120px royalblue;
+	animation: loading 5s 0s linear infinite;
+}
+
+.frame i:nth-child(2) {
+	text-shadow: 0 0 30px crimson,
+				 0 0 60px crimson,
+				 0 0 90px crimson,
+				 0 0 120px crimson;
+}
+.frame i:nth-child(3) {
+	text-shadow: 0 0 30px pink,
+				 0 0 60px pink,
+				 0 0 90px pink,
+				 0 0 120px pink;
+}
+.frame i:nth-child(4) {
+	text-shadow: 0 0 30px yellowgreen,
+				 0 0 60px yellowgreen,
+				 0 0 90px yellowgreen,
+				 0 0 120px yellowgreen;
+}
+
+@keyframes loading {
+	0% {
+		filter: hue-rotate(0);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}

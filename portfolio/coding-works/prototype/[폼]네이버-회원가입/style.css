@@ -1,0 +1,181 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+}
+
+body {
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+  background-color: #F5F6F7;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Reset CSS */
+input, button, select {
+  cursor: pointer;
+}
+
+/* Member Sign In */
+.member {
+  width: 460px;
+  margin: auto;
+  padding: 20px;
+}
+.member .logo {
+  height: 40px;
+  display: block;
+  margin: 50px auto;
+}
+.field {
+  margin: 5px 0;
+}
+.field b {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.member input:not(input[type=radio]), select {
+  border: 1px solid #dadada;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.member input:not(input[type=radio]):focus, select:focus {
+  border: 1px solid #03CF5D;
+}
+.userid::placeholder {
+  text-align: right;
+  font-weight: 200;
+}
+span.placetext {
+  display: block;
+  position: relative;
+}
+span.placetext:after {
+  content: '@naver.com';
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  pointer-events: none;
+  color: #888;
+}
+.userpw,
+.userpw-confirm {
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+  background-size: 18px;
+}
+.userpw {
+  background-image: url('images/icon-01.png');
+}
+.userpw-confirm {
+  background-image: url('images/icon-02.png');
+}
+
+.field.birth div {
+  display: flex;
+  gap: 10px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.field:nth-of-type(6) {
+  margin: 10px 0;
+}
+.field:nth-of-type(6) b {
+  display: inline-block;
+}
+.field label {
+  display: inline-block;
+  margin-left: 10px;
+  float: right;
+}
+input[name=gender] {
+  display: none;
+}
+input[name=gender] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -3px;
+  background: url('images/icon-radio.png') no-repeat;
+  background-position: left;
+}
+input[name=gender]:checked + em {
+  background-position: right;
+}
+.field b small {
+  color: #999;
+  font-weight: 300;
+}
+.tel-number {
+  width: 72% !important;
+}
+.btn {
+  background-color: #03CF5D;
+  color: #fff;
+  border: none;
+  padding: 16px;
+}
+.phone-number {
+  float: right;
+}
+.btn.signin {
+  width: 100%;
+  font-size: 15px;
+}
+
+.member-footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color: #03CF5D;
+}
+.member-footer div a:after {
+  content: 'l';
+  font-size: 10px;
+  color: #ddd;
+  margin-right: 5px;
+  padding-left: 7px;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+.member-footer div a:last-child:after {
+  display: none;
+}
+.member-footer div a:nth-child(2) {
+  font-weight: 500;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url('images/select-logo.png') no-repeat center right 10px;
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 100%;
+  }
+  .tel-number {
+    width: 65% !important;
+  }
+}

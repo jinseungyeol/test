@@ -1,0 +1,18 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.wave {
+  margin: 0;
+  font-size: 2em;
+  text-decoration-line: underline;
+  text-decoration-color: crimson;
+  text-underline-offset: 10px;
+  text-decoration-style: wavy;
+}
+.wave:hover {
+  text-decoration-color: black;
+  color: crimson;
+}

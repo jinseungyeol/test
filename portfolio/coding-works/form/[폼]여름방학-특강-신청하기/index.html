@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>여름방학특강신청하기</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    
+    <div class="vacation">
+      <div class="summer-class">
+        <h1>여름방학 특강 신청하기</h1>
+        <fieldset>
+          <legend>교육과정</legend>
+          <div>
+            <span class="item">영어회화</span>
+            <input type="text" value="오전 09:00 ~ 11:00" disabled> (초급레벨)
+          </div>
+        </fieldset>
+        <fieldset>
+         <legend>신청자 기본정보</legend>
+          <div>
+            <span class="item">이름</span><input type="text" required>
+          </div>
+          <div>
+            <span class="item">이메일</span><input type="email" required>
+          </div>
+          <div>
+            <span class="item">비밀번호</span><input type="password" required>
+          </div>
+          <div>
+            <span class="item">학과</span>
+            <select>
+              <option value="">학과를 선택하세요</option>
+              <option value="">시각디자인과</option>
+              <option value="">건축공학과</option>
+              <option value="">광고홍보과</option>
+            </select>
+          </div>
+          <div>
+            <span class="item">성별</span>
+            <input type="radio" name="gender" required> 여자 
+            <input type="radio" name="gender" required> 남자
+          </div>
+          <div>
+            <span class="item">관심사</span>
+            <input type="checkbox" id="chk1"> <label for="chk1">여행</label>
+            <input type="checkbox" id="chk1"> <label for="chk1">게임</label>
+            <input type="checkbox" id="chk1"> <label for="chk1">공연</label>
+            <input type="checkbox" id="chk1"> <label for="chk1">운동</label>
+            <input type="checkbox" id="chk1"> <label for="chk1">기타</label>
+          </div>
+          <div>
+            <span class="item"><p>하시고 싶은 말씀</p></span>
+            <textarea cols="30" rows="10"></textarea>
+          </div>
+        </fieldset>
+        <div class="btns">
+          <input type="submit" value="수강신청">
+          <input type="reset" value="다시쓰기">
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

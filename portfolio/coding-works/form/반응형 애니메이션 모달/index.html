@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형-애니메이션-모달</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+  <button class="open-modal">Going to book a trip</button>
+
+  <div class="modal-newsletter">
+    <div class="modal-newsletter-content">
+      <div class="photo"></div>
+      <div class="desc">
+        <div class="desc-header">
+          <h2>Book A trip Now</h2>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="desc-body">
+          <input type="email" placeholder="enter your phone number">
+          <input type="submit" value="Booking">
+          <p>
+            Domestic travel special price, overseas travel. If you sign up as an early bird, anyone will be rated VIP! You waited a long time, right? I'm back on the dream benefits I've been waiting for.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-overlay"></div>
+
+  <script>
+    $('.modal-newsletter-content, .modal-overlay').addClass('active')
+    $('.open-modal').click(function(){
+      $('.modal-newsletter-content, .modal-overlay').addClass('active')
+    })
+    $('.close-modal').click(function(){
+      $('.modal-newsletter-content, .modal-overlay').removeClass('active')
+    })
+    $('.modal-overlay').click(function(){
+      $('.modal-newsletter-content, .modal-overlay').removeClass('active')
+    })
+  </script>
+
+</body>
+</html>

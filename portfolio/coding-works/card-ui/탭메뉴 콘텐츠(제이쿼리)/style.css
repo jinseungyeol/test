@@ -1,0 +1,45 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  line-height: 1.6em;
+  font-family: 'Georama', sans-serif;
+}
+
+.testimonial {
+  width: 700px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+}
+.testimonial h1 {
+  font-size: 1.5em;
+}
+.testimonial h1 span {
+  color: green;
+}
+.users img {
+  filter: grayscale(1);
+  margin: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.users img.active {
+  border-radius: 50%;
+  /* filter: none; */
+  filter: grayscale(0);
+}
+.testimonial .content {
+  display: none;
+}
+.testimonial .content.active {
+  display: block;
+}

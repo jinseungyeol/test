@@ -1,0 +1,128 @@
+@media (max-width: 1150px) {
+  .inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+/* Common CSS */
+  header {
+    width: 99%;
+  }
+  .logo {
+    margin-left: -40px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .signin {
+    margin-right: -40px;
+  }
+  section {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .welcome {
+    height: 100vh;
+    width: 100%;
+  }
+  .heading {
+    width: 90%;
+    margin-top: -30px;
+  }
+  .heading h1 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  .heading h5,
+  .heading p {
+    font-size: 18px;
+  }
+  
+  .getstarted {
+    width: 100%;
+  }
+  .getstarted input[type=email] {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .getstarted button {
+    width: 50%;
+    font-size: 16px;
+  }
+  .enjoy,
+  .download,
+  .watch,
+  .create {
+    height: auto;
+  }
+  .inner {
+    width: 100%;
+    position: static;
+    transform: translate(0, 0);
+  }
+  .inner > div {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .desc h2 {
+    font-size: 30px;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+  .faq .inner {
+    width: 100%;
+  }
+  .faq h1 {
+    font-size: 25px;
+  }
+  .accordion {
+    padding: 10px;
+  }
+  input[name=faq] + label em {
+    width: 20px;
+    height: 20px;
+  }
+  footer {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .links ul {
+    width: 48%;
+  }
+  
+  /* Modal Login */
+  .modal-login {
+    background-color: #000;
+  }
+  .login {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Change Order */
+  .download .inner,
+  .create .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .download .inner .preview,
+  .create .inner .preview {
+    order: 2;
+  }
+  .download .inner .desc,
+  .create .inner .desc {
+    order: 1;
+  }
+}
+

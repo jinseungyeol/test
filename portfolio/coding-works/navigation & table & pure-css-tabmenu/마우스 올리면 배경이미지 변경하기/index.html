@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마우스 올리면 배경이미지 변환하기</title>
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <ul class="navi">
+      <li data-image="images/architecture-01.jpg"><a href="#none" data-text="SOHO">SOHO</a></li>
+      <li data-image="images/architecture-02.jpg"><a href="#none" data-text="DUSSELDORF">DUSSELDORF</a></li>
+      <li data-image="images/architecture-03.jpg"><a href="#none" data-text="CATHEDRAL">CATHEDRAL</a></li>
+      <li data-image="images/architecture-05.jpg"><a href="#none" data-text="TUNNEL">TUNNEL</a></li>
+    </ul>
+    <div class="photo">
+      <img src="images/architecture-01.jpg" alt="">
+    </div>
+  </div>
+
+  <script>
+    // $('.navi li').mouseenter(function(){
+    //   var changeImage = $(this).attr('data-image');
+    //   $('.photo img').attr('src', changeImage)
+    // })
+    // $('.navi li').mouseleave(function(){
+    //   $('.photo img').attr('src', 'images/architecture-01.jpg')
+    // })
+    $('.navi li').click(function(){
+      $(this).children().addClass('active')
+      $(this).siblings().children().removeClass('active')
+
+      var changeImage = $(this).attr('data-image')
+      $('.photo img').attr('src', changeImage)
+    })
+  </script>
+
+</body>
+</html>

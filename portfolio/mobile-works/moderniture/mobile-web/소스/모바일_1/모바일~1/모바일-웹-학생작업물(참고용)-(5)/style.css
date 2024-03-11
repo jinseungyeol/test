@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: 'Noto Sans',sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* Header */
+
+header {
+  height: 80px;
+  position: relative;
+  background-color: #b5121b;
+}
+header div {}
+.header-logo {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+}
+.header-logo img {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+/* Navigation */
+
+input[id=chk] {
+  display: none;
+}
+.trigger {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  transition: 0.7s;
+}
+.trigger label {
+  display: block;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.trigger label span {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.trigger label span:nth-child(1) {
+  top: 0;
+}
+.trigger label span:nth-child(2) {
+  top: 50%;
+}
+.trigger label span:nth-child(3) {
+  top: 100%;
+}
+input[id=chk]:checked ~ .trigger label span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+  background-color: #000;
+}
+input[id=chk]:checked ~ .trigger label span:nth-child(2) {
+  display: none;
+}
+input[id=chk]:checked ~ .trigger label span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+input[id=chk]:checked ~ .trigger {
+  left: 310px;
+}
+
+/* Sidebar Navi */
+
+.sidebar {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  background-color: #333;
+  transition: 0.7s;
+  z-index: 100;
+}
+input[id=chk]:checked ~.sidebar {
+  display: block;
+  left: 0;
+}
+.sidebar .sidebar-head a {
+  color: #fff;
+  font-size: 15px;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+.sidebar-head {
+  overflow: hidden;
+}
+.sidebar-head > div {
+  width: 50%;
+  box-sizing: border-box;
+}
+.login {
+  float: right;
+}
+.sidebar-logo {
+  float: left;
+  background-color: #b5121b;
+}
+.crown {
+  background-color: #fff;
+  height: 100px;
+}
+.menu {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a,
+.menu li label {
+  color: #fff;
+}
+.menu li label {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+.menu li label:last-child {
+  border-bottom: none;
+}
+.menu li .fa {
+  float: right;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.submenu {
+  background-color: #aaa;
+  display: none;
+}
+.submenu a { 
+  display: block;
+  padding: 7px;
+  border-bottom: 1px solid #000;
+}
+.submenu a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.menu li label.active ~ .submenu {
+  display: block;
+}
+
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 60px;
+}
+footer > div {
+  border: 1px solid transparent;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+footer div div {
+  background-color: #b5121b;
+  width: 33.333%;
+  height: 60px;
+  float: left;
+  line-height: 60px;
+  text-align: center;
+}
+footer div:nth-child(2) {
+  background-color: crimson;
+}
+footer div a {
+  color: #fff;
+}
+footer div a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+/* Main Page CSS */
+
+
+
+/* Main-Slide */
+
+.slide {
+  width: 100%;
+}
+.slide img {
+  width: 100%;
+}
+
+/* Notice */
+
+.notice {
+  background-color: #dcc998;
+}
+.notice a {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+.notice a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* APP */
+
+.app {
+  position: relative;
+}
+.app img {
+  width: 100%;
+}
+.app a:nth-child(2) {
+  font-size: 12px;
+  color: #fff;
+  background-color: #b5121b;
+  border-radius: 50px;
+  padding: 3px 25px;
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+}
+
+/* Store */
+
+.store {
+  background-color: #b5121b;
+  width: 100%;
+  height: 250px;
+  padding-top: 20px;
+}
+.store .form-area {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  text-align: center;
+}
+.store h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 2px;
+  position: relative;
+  border-bottom: 3px solid #b5121b;
+  display: inline-block;
+  text-align: center;
+}
+.select-area {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+}
+select {
+  flex: 1;
+  padding: 7px;
+}
+.search-area {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+
+}
+.search-area input[type=text] {
+  width: 70%;
+  padding: 10px;
+  display: block;
+  float: left;
+  outline: none;
+}
+.search-area a {
+  width: 9%;
+  background-color: #333;
+  float: right;
+  text-align: center;
+  padding: 5px 20px;
+  margin-right: 3px;
+  color: #fff;
+  border-radius: 5px;
+}
+input[type=text]:focus::placeholder {
+  opacity: 0;
+}
+
+/* New Menu */
+
+.newmenu {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+.newmenu h1 {
+  font-size: 20px;
+  display: inline-block;
+  border-bottom: 3px solid #b5121b;
+}
+.newmenu img {
+  width: 40%;
+}
+
+/* MD */
+
+.md {
+  position: relative;
+}
+.md a:nth-child(2) {
+  position: absolute;
+  left: 30%;
+  bottom: 40px;
+  color: #fff;
+  background-color: #b5121b;
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+.md a:hover {
+  text-decoration: none;
+}
+
+/* Academy */
+
+.academy {
+  position: relative;
+}
+.academy a:nth-child(2) {
+  position: absolute;
+  left: 35%;
+  bottom: 100px;
+  color: #fff;
+  background-color: #b5121b;
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+.academy a:hover {
+  text-decoration: none;
+}
+
+/*Giftcard & B2B */
+
+.giftcard img,
+.b2b img {
+  width: 100%;
+}
+
+
+
+/* Sub Page CSS */
+
+
+
+/* Sub Page CSS - Membership */
+
+/* Contents */
+
+.contents {
+  text-align: center;
+}
+.contents h1 {
+  font-weight: normal;
+  display: inline-block;
+  border-bottom: 3px solid #b5121b;
+}
+.desc {
+  margin-top: 50px;
+  text-align: center;
+}
+.desc em {
+  font-style: normal;
+  display: block;
+}
+.desc img {
+  margin-bottom: 30px;
+}
+.desc ul {
+  margin-top: 50px;
+  text-align: left;
+  padding: 20px;
+}
+.desc ul li {
+  margin: 10px;
+}
+.desc .fa {
+  margin: 70px auto;
+  font-size: 25px;
+  color: #aaa;
+}
+.gold em {
+  color: goldenrod;
+}
+.red em {
+  color: #b5121b;
+}
+.info {
+  text-align: left;
+}
+.info h3 {
+  font-size: 20px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.info .fa {
+  font-size: 18px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: baseline;
+  color: #fff;
+  background-color: #000;
+  padding: 7px;
+  text-align: center;
+  margin-left: 10px;
+}
+.info p {
+  margin-top: -20px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 2em;
+}
+.uplus {
+  margin-top: 70px;
+  border-top: 2px solid #eee;
+}
+.uplus img  {
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+}
+
+
+/* Sub Page CSS - Hollys Mall */
+
+/* Hollysmall */
+
+.hollysmall {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.hollysmall h1 {
+  font-size: 20px;
+  border-bottom: 3px solid #b5121b;
+  display: inline-block;
+}
+.hollysmall > a img {
+  width: 100%;
+  margin: 50px 0 ;
+}
+.hollysmall div {
+  width: 100%;
+  display: flex;
+}
+.hollysmall div a {
+  flex: 1;
+}
+.hollysmall div a img {
+  display: inline-block;
+  width: 95%;
+  margin: 10px;
+}
+
+
+/* Sub Page CSS - Hollys Menu */
+
+/* Hollys Menu */
+
+.hollysmenu {
+  width: 400px;
+  box-sizing: border-box;
+}
+input[name=hmenu] {
+  display: none;
+}
+.btn {
+  width: 100%;
+  border: 2px solid #b5121b;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  box-sizing: border-box;
+}
+.btn label[for=tab1],
+.btn label[for=tab2],
+.btn label[for=tab3] {
+  font-size: 20px;
+  border: 1px solid #b5121b;
+  flex: 1;
+}
+.btn label[for=tab3] {}
+.hollysmenu input[id=tab1]:checked ~ .btn label[for=tab1],
+.hollysmenu input[id=tab2]:checked ~ .btn label[for=tab2],
+.hollysmenu input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background-color: #b5121b;
+  color: #fff;
+}
+.tabs {
+  margin-top: 50px;
+}
+.tabs > div {
+  display: none;
+}
+.hollysmenu input[id=tab1]:checked ~ .tabs .tab1,
+.hollysmenu input[id=tab2]:checked ~ .tabs .tab2,
+.hollysmenu input[id=tab3]:checked ~ .tabs .tab3 {
+  display: block;
+}
+.tab1 a img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.tab2 div {
+  display: flex;
+  text-align: center;
+}
+.tab2 div span {
+  flex: 1;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.tab2 div p {
+  font-size: 15px;
+}
+.tab2 div a img {
+  width: 90%;
+}
+
+/* Total Menu */
+
+.tab3 {}
+.tab3 input[name=totalmenu] {
+  display: none;
+}
+.selecting {
+  border: 1px solid #000;
+  
+}
+.selecting span {
+  border: 1px solid #000;
+  display: flex;
+  height: 30px;
+}
+.selecting label {
+  border: 1px solid #000;
+  display: block;
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+input[id=coffee]:checked ~ .selecting span label[for=coffee],
+input[id=latte]:checked ~ .selecting span label[for=latte],
+input[id=bingsu]:checked ~ .selecting span label[for=bingsu],
+input[id=icetea]:checked ~ .selecting span label[for=icetea],
+input[id=bakery]:checked ~ .selecting span label[for=bakery],
+input[id=snack]:checked ~ .selecting span label[for=snack] {
+  background-color: #000;
+  color: #fff;
+}
+.coffee,
+.latte,
+.bingsu,
+.icetea,
+.bakery,
+.snack {
+  display: none;
+}
+input[id=coffee]:checked ~ .totalmenu .coffee,
+input[id=latte]:checked ~ .totalmenu .latte,
+input[id=bingsu]:checked ~ .totalmenu .bingsu,
+input[id=icetea]:checked ~ .totalmenu .icetea,
+input[id=bakery]:checked ~ .totalmenu .bakery,
+input[id=snack]:checked ~ .totalmenu .snack {
+  display: block;
+}
+.coffee,
+.latte,
+.bingsu,
+.icetea,
+.bakery,
+.snack {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+.coffee h3,
+.latte h3,
+.bingsu h3,
+.icetea h3,
+.bakery h3,
+.snack h3 {
+  font-weight: normal;
+  font-size: 30px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+.coffee span,
+.latte span,
+.bingsu span,
+.icetea span,
+.bakery span,
+.snack span {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.coffee span:last-child,
+.latte span:last-child,
+.bingsu span:last-child,
+.icetea span:last-child {
+  float: left;
+}
+.coffee span a img,
+.latte span a img,
+.bingsu span a img,
+.icetea span a img,
+.bakery span a img,
+.snack span a img {
+  width: 50%;
+}
+.coffee span p,
+.latte span p,
+.bingsu span p,
+.icetea span p,
+.bakery span p,
+.snack span p {
+  font-size: 15px;
+}
+
+
+/* Sub Page CSS - Login */
+
+/* Login */
+
+.login {
+  width: 100%;
+}
+.login h1 {
+  margin-top: 30px;
+  display: inline-block;
+  border-bottom: 3px solid #b5121b;
+  font-size: 20px;
+}
+.login-area {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 40px;
+  border-bottom: 2px solid #ddd;
+}
+.login-area span,
+.login-area input[type=text] {
+  display: block;
+}
+.login-area span {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.login-area input[type=text] {
+  width: 70%;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  outline: none;
+}
+.login-area button {
+  float: right;
+  background-color: #b5121b;
+  color: #fff;
+  width: 20%;
+  height: 100px;
+  outline: none;
+  border: none;
+  margin-top: -112px;
+}
+.finding-area {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+}
+.finding-area div {
+  flex: 1;
+  text-align: center;
+}
+.finding-area div a {
+  display: block;
+}
+.finding-area div a img {
+}
+.finding-area div p {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.finding-area a:nth-child(3) {
+  margin-top: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 5px 15px;
+  font-size: 15px;
+  display: inline-block;
+}

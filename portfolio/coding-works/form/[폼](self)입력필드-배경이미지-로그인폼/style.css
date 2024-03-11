@@ -1,0 +1,188 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #222;
+  font-weight: 300;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Common CSS */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* Modal */
+.modal-login {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-login:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/product-17.jpg) no-repeat center center;
+  background-size: cover;
+  filter: blur(3px);
+}
+.login {
+  position: absolute;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 300;
+  color: #222;
+  overflow: hidden;
+  padding: 60px;
+}
+.login-inner h1 {
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.35s;
+  color: #fff;
+}
+.btn-close:hover {
+  color: #84b4bf;
+}
+.login input[type=text],
+.login input[type=password] {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  color: #fff;
+  outline: none;
+  
+}
+.login input[type=text]:hover,
+.login input[type=password]:hover {
+  box-shadow: 0 0 10px #84b4bf;
+}
+.login input[type=button] {
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 30px auto;
+}
+.login input[type=button]:hover {
+  color: #fff;
+  background-image: linear-gradient(120deg, #a1c4fd 100%, #c2e9fb 0%);
+}
+input::placeholder {
+  color: #ddd;
+}
+.save-info {
+  overflow: hidden;
+}
+.save-info label {
+  float: left;
+  color: #fff;
+}
+.save-info a {
+  float: right;
+}
+.login a {
+  transition: 0.35s;
+  color: #fff;
+}
+.save-info a:hover {
+  color: #84b4bf;
+}
+.login-sns {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin: 50px 0;
+}
+.login-sns h3 {
+  position: relative;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.login-sns h3:before {
+  content: '';
+  position: absolute;
+  top: 180%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.login-sns a i {
+  font-size: 35px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.login-sns a:nth-of-type(1) i,
+.login-sns a:nth-of-type(2) i,
+.login-sns a:nth-of-type(3) i {
+  transition: 0.5s;
+}
+.login-sns a:nth-of-type(1) i {
+  background-color: #e4405f;
+}
+.login-sns a:nth-of-type(2) i {
+  background-color: #3b5999;
+}
+.login-sns a:nth-of-type(3) i {
+  background-color: #cd201f;
+}
+
+.login-sns a:nth-of-type(1) i:hover,
+.login-sns a:nth-of-type(2) i:hover,
+.login-sns a:nth-of-type(3) i:hover {
+  transform: scale(1.1);
+}
+.login-inner > a {
+  font-size: 18px;
+}
+.login-inner > a:hover {
+  color: #84b4bf;
+}

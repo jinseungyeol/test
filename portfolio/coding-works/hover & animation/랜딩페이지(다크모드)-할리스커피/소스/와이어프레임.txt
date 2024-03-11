@@ -1,0 +1,20 @@
+input[type=checkbox]
+.container
+	header
+		nav
+			.logo
+				img
+			.gnb
+				a*4, label[for=button]
+	section
+		.section-inner
+			.text
+				h1 > span
+				p
+				a.btn-learn
+				.sns
+					a*3 > font
+			.photo
+				img
+				
+				

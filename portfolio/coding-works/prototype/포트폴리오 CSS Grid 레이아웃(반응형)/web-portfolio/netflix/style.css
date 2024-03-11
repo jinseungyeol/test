@@ -1,0 +1,373 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  line-height: 1.6em;
+  color: #333;
+  margin: 0;
+  font-weight: 300;
+  background-color: #000;
+  color: #fff;
+}
+body.active {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+header {
+  /*height: 90px;*/
+  overflow: hidden;
+  padding: 15px 55px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+.logo {
+  float: left;
+  padding-top: 10px;
+}
+.logo img {
+  width: 200px;
+}
+.signin {
+  float: right;
+  padding-top: 4px;
+}
+.signin button {
+  background-color: red;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Common CSS */
+section {
+  border-bottom: 10px solid #222;
+  position: relative;
+}
+.getstarted {
+  position: relative;
+  display: inline-block;
+}
+.getstarted input,
+.getstarted button {
+  height: 60px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+.getstarted input[type=email] {
+  width: 450px;
+  height: 58px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.getstarted input[type=email] + span {
+  color: #aaa;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.25s;
+  pointer-events: none;
+}
+.getstarted input[type=email]:focus + span {
+  font-size: 14px;
+  color: #555;
+  transform: translateY(-15px);
+}
+.getstarted button {
+  width: 220px;
+  background-color: red;
+  color: #fff;
+  font-size: 26px;
+  margin-left: -5px;
+  cursor: pointer;
+}
+.getstarted button i {
+  vertical-align: middle;
+}
+
+/* Section : Welcome */
+.welcome {
+  height: 80vh;
+  background: url(images/welcome-background.jpg) no-repeat center center;
+  background-size: cover;
+}
+.welcome:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+.heading h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0;
+}
+.heading h5 {
+  font-weight: 400;
+  margin: 5px;
+  font-size: 26px;
+}
+.heading p {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* Section : enjoy */
+.enjoy,
+.download,
+.watch,
+.create {
+  height: 500px;
+}
+.inner {
+  /*border: 1px solid #fff;*/
+  width: 1150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inner > div {
+  float: left;
+  width: 50%;
+}
+.desc h2 {
+  font-size: 50px;
+  line-height: 1.6em;
+}
+.preview {
+  text-align: center;
+}
+.preview img {
+  height: 350px;
+}
+
+/* Section : inner */
+
+.faq .inner {
+  width: 815px;
+  position: static;
+  transform: translate(0, 0);
+  margin: auto;
+}
+.faq h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+input[name=faq] {
+  display: none;
+}
+input[name=faq] + label {
+  display: block;
+  background-color: #303030;
+  margin-bottom: 1px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[name=faq] + label em {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-top: 3px;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+input[name=faq] + label em:before,
+input[name=faq] + label em:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 0;
+}
+input[name=faq] + label em:after {
+  transform: rotate(90deg);
+}
+.faq-content {
+  box-sizing: border-box;
+  background-color: #303030;
+  margin-bottom: 10px;
+  /*display: none;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s;
+}
+.faq aside {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.faq aside p {
+  font-size: 19px;
+}
+
+/* FAQ Checked Function */
+input[name=faq]:checked + label + .faq-content {
+  /*display: block;*/
+  max-height: 700px;
+  padding: 15px;
+}
+input[name=faq]:checked + label em {
+  transform: rotate(45deg);
+}
+
+/* Footer */
+.footer-inner {
+  width: 850px;
+  margin: auto;
+  color: #aaa;
+  padding: 20px 0;
+}
+.sitemap h5 {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.links {
+  border-bottom: 1px solid #111;
+}
+.links ul {
+  display: inline-block;
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  vertical-align: top;
+  width: 200px;
+}
+.copyright h6 {
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+.copyright p {
+  font-size: 12px;
+  line-height: 1em;
+}
+.footer-inner a {
+  color: #aaa;
+}
+.footer-inner a:hover {
+  text-decoration: underline;
+}
+
+/* Modal Login */
+.modal-login {
+  background-color: rgba(0, 0, 0, 0.62);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 100;
+}
+.modal-login.active {
+  opacity: 1;
+  visibility: visible;
+}
+.login {
+  position: absolute;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 60px;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 300;
+  color: #aaa;
+}
+.login h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: #999;
+  cursor: pointer;
+}
+.login input[type=text],
+.login input[type=password] {
+  background-color: #333;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #fff;
+  outline: none;
+}
+.login input[type=button] {
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #E50914;
+}
+.save-info {
+  overflow: hidden;
+}
+.save-info label {
+  float: left;
+}
+.save-info a {
+  color: #fff;
+  float: right;
+}
+.login p {
+  line-height: 1.6em;
+}
+.login p a {
+  color: #0060B0;
+}

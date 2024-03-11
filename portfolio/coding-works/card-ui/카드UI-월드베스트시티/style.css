@@ -1,0 +1,142 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Default CSS */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-weight: 300;
+  margin: 0;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Section */
+section {}
+.section-inner {
+  width: 1600px;
+  margin: auto;
+}
+.heading {
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  padding: 20px;
+}
+.heading:after {
+  content: '';
+  position: absolute;
+  background-color: crimson;
+  width: 200px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.items {
+  padding: 30px;
+}
+.item {
+  width: 400px;
+  background-color: #f8f8f8;
+  padding: 30px;
+  transition: 0.35s;
+  display: inline-block;
+  margin: 20px;
+}
+.photo {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.5s;
+}
+.item:hover img {
+  transform: scale(1.1);
+}
+/*.photo {
+  background: url(images/photo-01.png) no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}*/
+.profile h3 {
+  font-size: 25px;
+}
+.profile p {
+  line-height: 2em;
+}
+.author {
+  overflow: hidden;
+  position: relative;
+}
+.face {
+  display: inline-block;
+  float: left;
+  background: url(images/face-01.png) no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+}
+.item:nth-child(2) .face {
+  background: url(images/face-02.png) no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.item:nth-child(3) .face {
+  background: url(images/face-03.png) no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.face:after {
+  content: 'JinSeungYeol';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+}
+.comment {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  box-sizing: border-box;
+}
+.btn-explore {
+  border: 1px solid;
+  display: block;
+  text-align: center;
+  margin: 40px;
+  padding: 5px 0;
+  background-color: #34465d;
+  color: #fff;
+  border-radius: 5px;
+  transition: 0.35s;
+}
+.btn-explore:hover {
+  color: #34465d;
+  background-color: #fff;
+}

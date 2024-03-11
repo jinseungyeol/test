@@ -1,0 +1,468 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* CSS Transition Only After OnLoad */
+.preload {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* Common CSS */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6me;
+  margin: 0;
+  font-weight: 300;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+/* Section : Gallery */
+.container {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.container:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/background.jpg');
+}
+.heading {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 4em;
+  z-index: 1;
+  animation: slide 1s linear both;
+  position: relative;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.container hr {
+  width: 300px;
+  height: 5px;
+  background-color: khaki;
+  border: none;
+  z-index: 1;
+  margin-top: -50px;
+} 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.gallery div {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.gallery div:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.gallery .focus {
+  /* grid-row: span 2;
+  grid-column: span 2; */
+  grid-area: span 2 / span 2;
+}
+.gallery div img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery div i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #fff;
+  font-size: 2em;
+  transition: 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+.gallery div span {
+  position: absolute;
+  left: 50%;
+  bottom: -70px;
+  transform: translateX(-50%);
+  width: 100%;
+  color: crimson;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.gallery div:hover:before,
+.gallery div:hover span,
+.gallery div:hover i {
+  opacity: 1;
+}
+.gallery div:hover i {
+  transform: translate(-50%, -50%) scale(1);
+}
+.gallery div:hover span {
+  bottom: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-70px);
+    opacity: 0;
+  }
+  100% {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+/* Featherlight Custom CSS */
+.featherlight .featherlight-content {
+  margin-left: 0;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-bottom: none;
+}
+.featherlight iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.featherlight .featherlight-close-icon {
+  font-size: 30px;
+  background-color: khaki;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  top: 92%;
+  left: 20px;
+  border-radius: 50%;
+  animation: close 0.5s linear both;
+  animation-delay: 0.7s;
+  opacity: 0;
+  visibility: hidden;
+}
+@keyframes close {
+  0% {
+    top: -10%;
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    top: 2%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes close-mobile {
+  0% {
+    top: -20%;
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    top: 2%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ############## SubPage CSS ############## */
+.container-sub {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-transform: uppercase;
+  position: relative;
+}
+.container-sub:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url('images/background-sub.jpg') no-repeat center center;
+  z-index: -1;
+}
+.container-sub-inner {
+  width: 1600px;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  color: #fff;
+}
+.container-sub-inner h1 {
+  color: crimson;
+}
+.container-sub-inner > h1 {
+  margin: 80px 0;
+  font-size: 45px;
+  color: #fff;
+  border-top: 2px solid khaki;
+  padding-top: 10px;
+} 
+.album {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+.album-photo img {
+  display: block;
+  width: 800px;
+}
+.album-intro {
+  padding-left: 50px;
+  text-align: right;
+}
+.album-intro h1 {
+  font-size: 30px;
+  border-bottom: 5px solid khaki;
+  padding-bottom: 20px;
+}
+.album-intro h3 {
+  font-size: 25px;
+}
+.album-intro p {
+  font-size: 22px;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.artist {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.artist-photo {
+  text-align: right;
+}
+.artist-intro {
+  padding-right: 50px;
+}
+.artist:nth-of-type(3) .artist-intro {
+  padding-left: 30px;
+  padding-right: 0;
+}
+.artist-intro h1 {
+  font-size: 30px;
+  border-bottom: 5px solid khaki;
+  padding-bottom: 20px;
+}
+.artist-intro h3 {
+  font-size: 25px;
+}
+.artist-intro p {
+  font-size: 25px;
+  line-height: 1.5em;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    height: auto;
+  }
+  .heading {
+    margin-top: 30px;
+    font-size: 50px;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr );
+  }
+
+  /* ########## SubPage Tablet Breakpoint ########## */
+  .container {
+    height: auto;
+  }
+  .container-sub:before {
+    background-size: cover;
+  }
+  .container-sub-inner {
+    width: 100%;
+    justify-items: center;
+  }
+  .album-intro {
+    margin-top: 50px;
+  }
+  .album-intro h1 {
+    font-size: 40px;
+  }
+  .container-sub-inner > h1 {
+    font-size: 70px;
+    text-align: center;
+    border-top: none;
+  }
+  .album-intro h3 {
+    font-size: 30px;
+  }
+  .album-intro b {
+    font-size: 17px;
+  }
+  .album {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  .album-photo img {
+    width: 100%;
+  }
+  .album-intro {
+    padding-left: 0;
+    text-align: left;
+    padding: 20px 0;
+  }
+  .artist {
+    grid-template-columns: repeat(1, 1fr );
+    padding: 20px;
+  }
+  .artist-photo img {
+    width: 100%;
+  }
+  .artist-intro {
+    padding-right: 0;
+  }
+  .artist-intro h3 {
+    font-size: 30px;
+  }
+  .artist-intro b {
+    font-size: 17px;
+  }
+  
+  /* Tablet Featherlight Custom CSS */
+  .featherlight .featherlight-close-icon {
+    top: -20%;
+    animation: close-mobile 0.5s linear both;
+    animation-delay: 0.5s;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    left: 15px;
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+  }
+  .heading {
+    font-size: 2em;
+    margin-top: 50px;
+  }
+  .container hr {
+    margin-top: -20px;
+  }
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+  }
+  .gallery .focus {
+    grid-area: span 1 / span 1;
+  }
+
+  /* ########## SubPage Mobile Breakpoint ########## */
+  .container-sub {
+    height: auto;
+  }
+  .container-sub:before {
+    background-size: cover;
+  }
+  .container-sub-inner {
+    width: 100%;
+    justify-items: center;
+  }
+  .container-sub-inner > h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-top: none;
+  }
+  .album {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+  .album-photo img {
+    width: 100%;
+  }
+  .album-intro {
+    padding-left: 0;
+    text-align: left;
+    padding: 20px 0;
+  }
+  .artist:nth-of-type(3) .artist-intro {
+    padding: 0;
+    grid-row: 1 ;
+  }
+  .album-intro p {
+    font-size: 20px;
+  }
+  .artist {
+    grid-template-columns: repeat(1, 1fr );
+    padding: 20px;
+  }
+  .artist-photo img {
+    width: 100%;
+  }
+  .artist-intro {
+    padding-right: 0;
+  }
+  .artist-intro p {
+    font-size: 20px;
+  }
+
+  /* Mobile Featherlight Custom CSS */
+  .featherlight .featherlight-close-icon {
+    top: -20%;
+    animation: close-mobile 0.5s linear both;
+    animation-delay: 0.5s;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    left: 15px;
+  }
+  
+}

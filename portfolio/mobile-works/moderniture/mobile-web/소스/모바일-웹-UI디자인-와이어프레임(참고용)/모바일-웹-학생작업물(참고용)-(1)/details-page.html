@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <title>MY.B 모바일-setails-page</title>
+  <!--UIkit CSS & JS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="detail-inner">
+      <div class="top-head">
+        <a href="javascript:history.back()"><i class="fa fa-angle-left"></i></a>
+        <span>상품정보</span>
+        <a class="open" href="#none"><i class="fa fa-shopping-bag"></i></a>
+      </div>
+      <section class="slide">
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+          <ul class="myslide uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+              <img src="images/baby-01.jpg" alt="">
+            </li>
+            <li>
+              <img src="images/baby-02.jpg" alt="">
+            </li>
+            <li>
+              <img src="images/baby-03.jpg" alt="">
+            </li>
+          </ul>
+
+          <a class="myangle uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="myangle uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+      </section>
+      <section class="info">
+        <div class="name">
+          <h4>MY.B 이유용품1위</h4>
+          <h5>툼툼 (TUM TUM)</h5>
+          <h1>아기빨대컵-곰돌이 200ml</h1>
+          <a href="#none" class="heart"><i class="fa fa-heart"></i></a>
+          <b>20<small>%</small><span>14,400원</span><del>18,000원</del></b>
+        </div>
+        <div class="middle-bar"></div>
+        <div class="place">
+          <h1>판매자: 툼툼 공식몰</h1>
+          <h2>MY.B 포인트: 최대 <small>144P</small>적립</h2>
+          <div class="deliver">
+            <span>배송비: 2,500원 (30,000원 이상 무료)</span>
+            <small>택배사 | CJ대한통운</small>
+          </div>
+        </div>
+      </section>
+      <div class="buy">
+        <a href="#none" class="buy">구매하기<small>(최대147P 적립)</small></a>
+      </div>
+      <div class="buy-modal">
+        <div class="buy-inner">
+          <a class="buy-close" href="#none"><i class="fa fa-angle-down"></i></a>
+          <span>- 툼툼 아기빨대컵 -곰돌이</span>
+          <select>
+            <option>수량선택</option>
+            <option value="">1개</option>
+            <option value="">2개</option>
+            <option value="">3개</option>
+            <option value="">4개</option>
+            <option value="">5개</option>
+          </select>
+          <b>총금액<big>14,400원</big></b>
+          <div class="buy-btn">
+            <a href="#none">장바구니</a>
+            <a href="#none">바로구매</a>
+          </div>
+        </div>
+      </div>
+      <div class="shop-modal">
+        <div class="modal-inner">
+          <div class="modal-head">
+            <a class="close" href="#none"><i class="fa fa-angle-left"></i></a>
+            <span>장바구니</span>
+          </div>
+          <div class="modal-cotent">
+            <a href="#none"><i class="fa fa-shopping-bag"></i></a>
+            <p>장바구니에 담은 상품이 없습니다.</p>
+            <a class="now" href="#none">바로구매 가능한 제품 보러가기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('.buy').click(function(){
+        $('.buy-modal').addClass('active');
+      });
+      $('.buy-close').click(function(){
+        $('.buy-modal').removeClass('active');
+      });
+    </script>
+    <script>
+      $('.open').click(function(){
+        $('.shop-modal').addClass('active');
+      });
+      $('.close').click(function(){
+        $('.shop-modal').removeClass('active');
+      });
+    </script>
+  </div>
+</body>
+</html>

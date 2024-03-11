@@ -1,0 +1,176 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* XEICON */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Default CSS */
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #333;
+	margin: 0;
+	background-color: skyblue;
+}
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+/* Profile Card : Light Mode */
+.profile {
+	width: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+
+.btn-back {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 20px;
+}
+.icons {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 20px;
+}
+.fa-ellipsis-v {
+	padding-left: 20px;
+}
+.face {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translatex(-50%);
+	border: 1px solid;
+	width: 100px;
+	height: 100px;
+	background: url('images/face.jpg') no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+}
+.face .xi-check-circle {
+	font-size: 25px;
+	position: absolute;
+	bottom: -2px;
+	right: 0;
+	color: royalblue;
+}
+.profile h1 {
+	margin-top: 200px;
+	font-size: 28px;
+}
+.profile h1 span {
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+	color: #666;
+	font-weight: bold;
+}
+.profile p {
+	color: #444;
+	font-size: 16px;
+}
+.profile p a {
+	display: block;
+	text-decoration: underline;
+	margin-top: -5px;
+	color: #444;
+}
+.sns {
+	margin-bottom: 30px;
+}
+.sns a {
+	margin: 0 10px;
+	font-size: 24px;
+	color: grey;
+}
+.btn-hire {
+	background-color: skyblue;
+	padding: 5px 35px;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 18px;
+}
+hr {
+	width: 300px;
+	height: 2px; 
+	background-color: #aaa;
+	border: none;
+	margin-top: 50px;
+}
+.status {
+	margin-top: 50px;
+}
+.status span{
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0 20px;
+	margin-bottom: 20px;
+}
+.status big {
+	font-weight: bold;
+	font-size: 26px;
+	display: block;
+	color: #000;
+	line-height: 1.8em;
+}
+.status span {
+	color: #aaa;
+	font-size: 16px;
+}
+.status .xi-instagram {
+	color: crimson;
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+.status .xi-facebook-official {
+	color: royalblue;
+	font-size: 70px;
+	margin-bottom: 20px;
+}
+
+/* Profile Card : Dark Mode */
+.profile.dark {
+	background-color: #011638;
+	color: #fff;
+}
+.profile.dark h1 span {
+	color: #bbb;
+}
+.profile.dark p {
+	color: #fff;
+}
+.profile.dark p a {
+	color: #fff;
+}
+.profile.dark .sns {
+	color: #ccc;
+}
+.profile.dark .status big {
+	color: #fff;
+}
+.profile.dark .xi-long-arrow-left {
+	color: #fff;
+}
+.profile.dark .btn-like {
+	color: #fff;
+}
+.profile.dark .btn-trigger {
+	color: #fff;
+}

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>좌우로이동하는탭메뉴(self)-02</title>
+    <style>
+      .tab-inner {
+        border: 5px solid;
+        width: 400px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+      }
+      .content {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        transform: translateX(-100px);
+      }
+      .heading h1 {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        width: 150px;
+        height: 150px;
+        padding-top: 25px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        margin: 0;
+        opacity: 0;
+        transition: 0.5s;
+        transform: translateY(-100px);
+      }
+      .heading h1:nth-child(1) {
+        background-color: red;
+      }
+      .heading h1:nth-child(2) {
+        background-color: blue;
+      }
+      .heading h1:nth-child(3) {
+        background-color: green;
+      }
+      .heading big {
+        display: block;
+      }
+      .btn {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .btn label {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #aaa;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+      }
+      
+      /* Checked Function */
+      input[name=tabmenu] {
+        display: none;
+      }
+      input[id=tab1]:checked ~ .btn label[for=tab1],
+      input[id=tab2]:checked ~ .btn label[for=tab2],
+      input[id=tab3]:checked ~ .btn label[for=tab3] {
+        background-color: #000;
+      }
+      input[id=tab1]:checked ~ .tab1,
+      input[id=tab2]:checked ~ .tab2,
+      input[id=tab3]:checked ~ .tab3 {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+      }
+      input[id=tab1]:checked ~ .heading h1:nth-child(1),
+      input[id=tab2]:checked ~ .heading h1:nth-child(2),
+      input[id=tab3]:checked ~ .heading h1:nth-child(3) {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.35s;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div class="tab-inner">
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      <div class="content tab1">
+        <img src="images/product-01.png">
+      </div>
+      <div class="content tab2">
+        <img src="images/product-02.png">
+      </div>
+      <div class="content tab3">
+        <img src="images/product-03.png">
+      </div>
+      <div class="heading">
+        <h1>SALE <big>50%</big></h1>
+        <h1>SALE <big>40%</big></h1>
+        <h1>SALE <big>30%</big></h1>
+      </div>
+      <div class="btn">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+      </div>
+    </div>
+  
+  </body>
+</html>

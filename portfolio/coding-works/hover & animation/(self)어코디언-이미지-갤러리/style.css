@@ -1,0 +1,101 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Default CSS */
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  font-weight: 300;
+  margin: 0;
+  color: #222;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Gallery */
+.gallery {
+  list-style: none;
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.gallery li {
+  flex: 1;
+  border: 3px solid;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.gallery li:hover {
+  flex: 3;
+}
+.gallery li:first-child {
+  border-left: none;
+  background: url('images/dog-01.jpg') no-repeat center center;
+}
+.gallery li:nth-child(2) {
+  background: url('images/dog-02.jpg') no-repeat center center;
+}
+.gallery li:nth-child(3) {
+  background: url('images/dog-03.jpg') no-repeat center center;
+}
+.gallery li:nth-child(4) {
+  background: url('images/dog-04.jpg') no-repeat center center;
+}
+.gallery li:last-child {
+  border-right: none;
+  background: url('images/dog-05.jpg') no-repeat center center;
+}
+.content {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  bottom: -300px;
+  transition: 0.5s;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+.content h2 {
+  color: green;
+}
+.content:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 72px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  transform-origin: left bottom;
+  transform: rotate(-5deg) scale(1.1);
+}
+.content p {
+  font-size: 18px;
+  color: beige;
+}
+.content a {
+  font-size: 18px;
+  margin: 10px;
+  color: #f8f8f8;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(245, 245, 220, 0.2);
+  line-height: 30px;
+  border-radius: 50%;
+}
+.gallery li:hover .content {
+  bottom: 0;
+  transition-delay: 0.5s;
+}

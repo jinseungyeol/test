@@ -1,0 +1,233 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Common CSS */
+body {
+	margin: 0;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+body.active {
+	overflow: hidden;
+}
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+section {
+	margin: 15px 0;
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+/* Reset CSS */
+a {
+	text-decoration: none;
+	color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+/* Overlay */
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+.overlay.active {
+	display: block;
+}
+/* Ban-modal */
+.ban-modal {
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	display: none;
+}
+.ban-modal.active {
+	display: block;
+}
+.ban-modal > span {
+	width: 80%;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 400;
+}
+.ban-btn {
+	text-align: right;
+	padding: 30px 0 0 0;
+}
+.ban-btn span {
+	margin: 0 8px;
+	font-weight: 400;
+}
+.ban-btn span:first-child {
+	color: #bab6b6;
+}
+.ban-btn span:last-child {
+	color: #6e54ea;
+}
+/* Detail-info-modal */
+.detail-info-modal {
+	position: absolute;
+	bottom: -600px;
+	left: 0;
+	width: 100%;
+	background: rgb(40, 38, 38);
+	color: #fff;
+	padding: 20px;
+	z-index: 1;
+	transition: .35s;
+}
+.detail-info-modal.active {
+	bottom: 0;
+}
+.detail-info-modal > div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.detail-info-modal > div h4 {
+	font-weight: 400;
+}
+.detail-info-modal > div h4 span {
+	font-weight: 300;
+	display: block;
+	font-size: 13px;
+}
+.close-btn {
+	font-size: 20px;
+	font-weight: bold;
+	align-self: flex-start;
+}
+.detail-info-con {
+	height: 350px;
+	margin: 10px 0 50px 0;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.detail-info-con a {
+	color: #fff;
+	padding: 10px 0;
+	font-size: 13px;
+	font-weight: 400;
+	width: 100%;
+}
+.detail-info-con a i {
+	margin: -2px 10px 0 0;
+	font-size: 16px;
+	vertical-align: middle;
+}
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+}
+header > i {
+	align-self: flex-start;
+	font-size: 25px;
+	font-weight: 400;
+	color: #6e54ea;
+}
+/* Detail */
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.container.detail {
+	height: 100vh;
+}
+.container p {
+	padding: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	color: #ccc;
+}
+.container > a {
+	width: 80%;
+}
+.container > a img {
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px rgba(61, 40, 160, 0.33);
+}
+.detail-desc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 90%;
+	text-align: center;
+}
+.detail-desc h3 small {
+	display: block;
+	font-size: 12px;
+	color: grey;
+	font-weight: 500;
+}
+.detail-desc h3 i {
+	font-weight: bold;
+	vertical-align: middle;
+	margin: -1px 0 0;
+	color: #6e54ea;
+}
+.detail-btn {
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 60px;
+	background: linear-gradient(80deg, #836af7, #6e54ea);
+}
+.detail-btn i {
+	color: #fff;
+}
+.detail-btn div {
+	position: relative;
+	text-align: center;
+}
+.detail-btn div:before {
+	content: '\ea10';
+	font-family: xeicon;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	color: red;
+	display: none;
+}
+.detail-btn div.active:before {
+	display: block;
+}
+/* Custom Audio */
+button#playpausebtn {
+	background: url(images/detail/play.png) no-repeat;
+	width: 32px;
+	height: 32px;
+	border: none;
+	cursor: pointer;
+}
+

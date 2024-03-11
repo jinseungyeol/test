@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" >
+  <title>detail</title>
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+  
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+
+</head>
+<body>
+
+  <div class="container detail">
+    <div class="foodname">
+      <h1>탄단지 샐러디</h1>
+      <h6>tandanji salady</h6>
+      <div class="sharp">
+        <span>닭가슴</span>
+        <span>견과류</span>
+        <span>크랜베리</span>
+      </div>
+      <a href="javascript:history.back()"><img src="img/detail-pr.png" alt=""></a>
+      <i class="fa fa-heart-o"></i>
+    </div>
+    
+    <!--img-->
+    <div class="slideri">
+      <div uk-slider>
+
+        <div class="detail-main-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+          <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+            <li>
+              <img src="img/detail-img01.png" alt="">
+            </li>
+            <li>
+              <img src="img/detail-img02.png" alt="">
+            </li>
+          </ul>
+
+          <a class=" uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="detail-main-btn uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+        </div>
+        <ul class="detail-slider-nav uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        
+
+      </div>
+    </div>
+     
+      
+      
+      
+    <!--img-->
+    <div class="detail-price">
+      <div class="big-price">
+        <h2>7,900</h2>
+        <small>원</small>
+      </div>
+      <div class="big-kcal">
+        <div class="kcal">
+          <big>total</big>
+          <h3>265kcal</h3>
+        </div>
+        <div class="food-rating">4.9 <em>★★★★☆</em><b>[144]</b></div>
+      </div>
+    </div> 
+    
+    <div class="food-detail">
+      <input type="radio" id="detail01"  name="detail"checked>
+      <input type="radio" id="detail02" name="detail">
+      <input type="radio" id="detail03" name="detail">
+      <div class="info-btn">
+      <label for="detail01">기본 정보</label>
+      <label for="detail02">원산지</label>
+      <label for="detail03">알레르기 정보</label>
+      </div>
+      <div class="info-slide">
+        <div class="info01">
+          <div class="content cnt01">
+            <h5>치킨,고구마무스,견과류,크랜베리가 조화를 이루는 담백한 샐러드 (*기본 드레싱: 오리엔탈)</h5>
+            <div class="topping">
+              <b>추천 토핑 </b>
+              에그, 리코타치즈, 아보카도무스, 옥수수, 토마토, 또띠아칩, 칙피, 올리브
+            </div>
+            <div class="source">
+              <b>추천 드레싱 </b>
+              <div class="sc-img">
+               <div>
+                 <img src="img/sc01.png" alt="">
+                 <p>시저</p>
+               </div>
+                <div>
+                 <img src="img/sc02.png" alt="">
+                 <p>발사믹</p>
+               </div>
+                <div>
+                 <img src="img/sc03.png" alt="">
+                 <p>이탈리아 허브</p>
+               </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="content cnt02">
+            <div class="cnt-type">
+              <b>상품명</b>
+              <b>표시사항</b>
+            </div>
+            <div class="text">
+              <span>시저치킨샐러디,<br>
+                    치킨랩,<br>
+                    치킨토마토 샌드,<br>
+                    탄단지 샐러디</span>
+              <span>닭가슴살(국내산)</span>
+            </div>
+            <div class="text">
+              <span>연어샐러디,<br>
+                    연어어니언</span>
+              <span>연어(칠레산)</span>
+            </div>
+            <div class="text">
+              <span>멕시칸</span>
+              <span>소고기(호주산),<br>
+                    돼지고기(국내산)</span>
+            </div>
+            <div class="text">
+              <span>시크니처 콥,<br>
+                    에그베이컨,<br>
+                    칠리베이컨</span>
+              <span>돼지고기<br>
+                    (외국산:독일,벨기에,네덜란드)</span>
+            </div>
+             <div class="text">
+              <span>
+                우삼겹 웜볼,<br>
+                칠리베이컨 웜볼,<br>
+                허니소시지 웜볼,<br>
+                그린콥 웜볼
+              </span>
+              <span>안남미(태국산)</span>
+            </div>
+            <div class="text">
+              <span>
+                그린콥 샐러디,<br>
+                그린콥 웜볼
+              </span>
+              <span>칙피/콩(이탈리아산)<br>
+                그린빈/콩(태국산)</span>
+            </div>
+          </div>
+          <div class="cnt03">
+            <cnt class="cnt03-bg">
+              <img src=img/detail-bgg.jpg alt="">
+            </cnt>
+            <div class="cnt03-text">
+              <h3>알레르기 유발 가능 재료&메뉴</h3>
+              <big>·계란(난류)</big>
+              <p>
+                시그니처콥 샐러디, 탄단지 샐러디, 아보크랩 샐러디, 칠리베이컨 웜볼, 에그베이컨 랩, 허니소시지 웜볼, 에그베이컨 랩, 칠리베이컨웜랩, 컵 샐러디, 시저 드레싱, 오리엔탈 드레싱, 크리미칠리 드레싱, 허니머스타드 드레싱, 샌드 전메뉴(빵), 에그, 스윗포테이토, 아보카도무스
+              </p>
+              <big>·우유</big>
+              <p>
+                멕시칸 샐러디, 리코타치즈 샐러디, 탄단지 샐러디, 아보크랩 샐러디, 샌드 전메뉴(크림치즈, 빵), 랩/웜랩 전메뉴(또띠아), 스윗포테이토, 아보카도 무스, 크리미크랩, 시저 드레싱, 오리엔탈 드레싱, 허니머스타드 드레싱, 크리미칠리 드레싱,
+                브라운브레드, 리코타치즈, 또띠아칩
+              </p>
+              <big>·견과류</big>
+              <p>
+                리코타치즈 샐러디, 탄단지 샐러디, 우삼겹 웜볼, 크렌베리그릭 랩, 우삼겹 웜랩, 오리엔탈 드레싱, 견과류
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="info02"></div>
+        <div class="info03"></div>
+      </div>
+      
+      
+    </div>
+    <div class="order-btn">
+      <div class="order-tab">
+        <div class="menu-title">
+          <h2>탄단지 샐러디</h2></div>
+        <div class="order-price">
+          <b>가격</b>
+          <p>7,900원</p>
+        </div>
+        <div class="order-side">
+          <h1>추천토핑</h1>
+          <div class="order-topping">
+            <input type="checkbox" id="tp01">선택없음<p>0원</p>
+            <div class="top-btn special">
+              <label for="tp01"></label>
+            </div>
+          </div>
+          <div class="order-topping">
+            <input type="checkbox" id="tp02" checked>에그<p>+500원</p>
+            <div class="top-btn">
+              <label for="tp02"></label>
+            </div>
+          </div>
+          <div class="order-topping">
+            <input type="checkbox" id="tp03" >리코타치즈<p>+700원</p>
+            <div class="top-btn">
+              <label for="tp03"></label>
+            </div>
+          </div>
+          <div class="order-topping">
+            <input type="checkbox" id="tp04" >아보카토무스<p>+700원</p>
+            <div class="top-btn">
+              <label for="tp04"></label>
+            </div>
+          </div>
+          <div class="order-topping">
+            <input type="checkbox" id="tp05" >옥수수<p>+1,000원</p>
+            <div class="top-btn">
+              <label for="tp05"></label>
+            </div>
+          </div>
+          <div class="order-topping">
+            <input type="checkbox" id="tp06" >토마토<p>+1,500원</p>
+            <div class="top-btn">
+              <label for="tp06"></label>
+            </div>
+          </div>
+
+        </div>
+        <div class="amount">
+          <b>수량</b>
+          <div>
+            <span>-</span>
+            <span>1</span>
+            <span>+</span>
+          </div>
+          
+        </div>
+        <div class="exprice">
+          <b>총 주문금액</b>
+          <p>7,900원</p>
+        </div>
+      </div>
+      <div class="order">
+      <p>주문하기</p>
+      </div>
+      
+    </div>
+            
+  </div>
+  
+  <script>
+    $('.order').click(function(){
+      $('.order-tab').toggleClass('active')
+    });
+  </script>
+  
+  
+  
+  
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

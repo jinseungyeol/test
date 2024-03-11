@@ -1,0 +1,107 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Benne&display=swap');
+
+body {
+  font-family: 'Benne', serif;
+  font-size: 15px;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: #fff;
+  background-color: #333;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.frame-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.frame {
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+}
+.frame span {
+  border-radius: 53% 48% 63% 58%/ 59% 42% 47% 64%;
+  border: 1px solid #fff;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  left: 0;
+  top: 0;
+  animation: rotate linear infinite;
+  z-index: -1;
+  transition: 0.5s;
+}
+.frame:hover span {
+  border-color: transparent;
+}
+.frame:nth-child(1):hover span {
+  background-color: #2ecc71;
+}
+.frame:nth-child(2):hover span {
+  background-color: #f1c40f;
+}
+.frame:nth-child(3):hover span {
+  background-color: #e74c3c;
+}
+.frame span:nth-child(1) {
+  animation-duration: 8s;
+  opacity: 0.2;
+}
+.frame span:nth-child(2) {
+  border-radius: 49% 53% 67% 53%/ 51% 56% 52% 48%;
+  animation-direction: reverse;
+  animation-duration: 2s;
+  opacity: 0.4;
+}
+.frame span:nth-child(3) {
+  border-radius: 49% 57% 62% 48%/ 56% 47% 61% 48%;
+  animation-direction: reverse;
+  animation-duration: 4s;
+  opacity: 0.6;
+}
+.frame span:nth-child(4) {
+  border-radius: 49% 52% 62% 59%/ 47% 50% 39% 61%;
+  animation-duration: 6s;
+  opacity: 0.8;
+}
+.content {
+  margin-top: 80px;
+  padding: 0 30px;
+}
+.content h2 {}
+.content p {
+  font-size: 16px;
+}
+.content a {
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 49% 56% 62% 60%;
+  display: inline-block;
+  margin-top: 7px;
+  transition: 0.5s;
+}
+.content a:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: transparent;
+  
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

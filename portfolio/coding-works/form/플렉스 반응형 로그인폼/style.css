@@ -1,0 +1,103 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* FontAwesome 4.7 CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+/* Common CSS */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  color: #222;
+  background-color: #eee;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.login-form {
+  background-color: #fff;
+  width: 700px;
+  padding: 40px 20px;
+}
+.login-form h2 {
+  font-weight: normal;
+  font-size: 30px;
+  margin-top: 0;
+}
+.sns {
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sns a {
+  color: #fff;
+  flex: 1;
+  background-color: #1877F2;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sns a:nth-child(2) {
+  background-color: #1DA1F2;
+}
+.sns a:nth-child(3) {
+  background-color: #CD201F;
+}
+.sns a i {
+  margin-right: 5px;
+}
+.field {
+  display: flex;
+  margin-bottom: 15px;
+}
+.field span {
+  flex: 1;
+  padding-top: 6px;
+}
+.field input {
+  flex: 5;
+  padding: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 5px;
+}
+.btn-login {
+  float: right;
+  background-color: #3AAF85;
+  color: #fff;
+  padding: 5px 40px;
+  border-radius: 5px;
+  margin-top: 7px;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    margin: 10px;
+    width: 100%;
+  }
+  .sns {
+    flex-direction: column;
+  }
+  .sns a {
+    margin-bottom: 5px;
+  }
+  .field {
+    flex-direction: column;
+  }
+  .btn-login {
+    width: 100%;
+    text-align: center;
+  }
+}

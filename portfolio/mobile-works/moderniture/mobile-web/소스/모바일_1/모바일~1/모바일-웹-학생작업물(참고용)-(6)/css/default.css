@@ -1,0 +1,125 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap');
+
+/* font-awesome */
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+body.index {
+  background-color: #ddd;
+  height: 100vh;
+}
+body.index .container {
+  width: 100%;
+  height: 100%;
+}
+body.index a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.container {
+/*	width: 360px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+	color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.clear:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+/* bool-btn */
+a.book-btn {
+  display: inline-block;
+  border: 1px solid #a7a7a7;
+  font-size: 12px;
+  width: 92px;
+  height: 24px;
+  line-height: 24px;
+  color: #000;
+  border-radius: 92px;
+	text-align: center;
+}
+a.book-btn:hover {
+	color: #000;
+}
+a.book-btn:focus {
+	color: #fff;
+  background-color: #5c8b94;
+  border: 1px solid #5c8b94;
+}
+
+/* bottom */
+.bottom {
+  overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #fff;
+	box-shadow: 0 0 30px rgba(180, 180, 180, 0.33);
+}
+.bottom ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.bottom ul li a {
+  display: inline-block;
+  width: 50%;
+  height: 60px;
+  box-sizing: border-box;
+  font-size: 11px;
+  color: #979797;
+  padding: 38px 0 0 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.bottom ul li a:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.bottom ul li:nth-child(1) a:before {
+  background: url(../images/icon-03.png) no-repeat center;
+  background-size: 28.5px;
+}
+.bottom ul li:nth-child(2) a:before {
+  background: url(../images/icon-04.png) no-repeat center;
+  background-size: 30px;
+}
+.bottom ul li:nth-child(3) a:before {
+  background: url(../images/icon-05.png) no-repeat center;
+  background-size: 18.5px;
+}
+.bottom ul li:nth-child(4) a:before {
+  background: url(../images/icon-06.png) no-repeat center;
+  background-size: 23px;
+}

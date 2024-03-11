@@ -1,0 +1,61 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #333;
+}
+
+/* Table : Price */
+.price {
+	border-spacing: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.price td {
+	width: 200px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	padding: 30px; /* 또는 hr에 width 80퍼주면됨 */
+}
+.price td ul {
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+.price td ul li big {
+	font-weight: bold;
+	margin-right: 5px;
+}
+.price td h1 {
+	color: deepskyblue;
+	font-weight: normal;
+	font-size: 34px;
+}
+.price td h2 {
+	color: orange;
+}
+.price td hr {
+	border: none;
+	border-bottom: 1px dashed #ccc;
+}
+.btn {
+	background-color: orange;
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 3px;
+	padding: 8px;
+	display: block;
+	box-shadow: 2px 2px 0 grey;
+}
+.btn-blue {
+	background-color: royalblue;
+}

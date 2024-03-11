@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.wave {
+  margin: 0;
+  font-size: 2em;
+  position: relative;
+  padding: 15px 0;
+  overflow: hidden;
+}
+.wave:after,
+.wave:before {
+  content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  position: absolute;
+  /* width: 100%; */
+  left: 0;
+  text-decoration-style: wavy;
+  text-decoration-color: crimson;
+  /* text-decoration-thickness: 5px; */
+  color: transparent;
+  
+}
+.wave:after {
+  text-decoration-line: underline;
+  bottom: 3px;
+  animation: move 2s linear infinite;
+}
+.wave:before {
+  text-decoration-line: overline;
+  top: 20px;
+  animation: move 2s linear infinite reverse;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}

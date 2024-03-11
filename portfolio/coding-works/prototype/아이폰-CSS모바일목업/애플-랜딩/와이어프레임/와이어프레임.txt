@@ -1,0 +1,15 @@
+.container
+	header
+		nav
+	section.intro
+	section.branch1
+		<div>*2
+	section.branch2
+		<div>*2
+	section.branch3
+		<div>*2
+	section.formac
+	section.iphonex-video
+	section.macos
+	footer
+	

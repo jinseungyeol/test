@@ -1,0 +1,143 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Common CSS */
+body {
+	margin: 0;
+	line-height: 1.5em;
+	font-weight: 300;
+}
+* {
+	font-family: 'Noto Sans KR', sans-serif;
+	box-sizing: border-box;
+}
+section {
+	margin: 15px 0;
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+/* Reset CSS */
+a {
+	text-decoration: none;
+	color: #222;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+}
+button {
+	outline: none;
+	border: none;
+}
+/* header */ 
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.container.list {
+	height: 100vh;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+header > i {
+	align-self: flex-start;
+	font-size: 25px;
+	font-weight: 400;
+	color: #6e54ea;
+}
+header span {
+	font-weight: 500;
+}
+header a {
+	width: 35px;
+	height: 35px;
+}
+header a img {
+	height: inherit;
+	object-fit: cover;
+}
+.list-items {
+	background: rgba(110, 84, 234, 0.06);
+	padding: 5px 30px;
+	overflow-x: hidden;
+	height: 700px;
+}
+.list-items::-webkit-scrollbar {
+	display: none;
+}
+.list-item {
+	display: flex;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(65, 41, 180, 0.2);
+	margin: 20px 0 0;
+	padding: 15px;
+	position: relative;
+}
+.list-item a {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.list-item a img {
+	width: inherit;
+	height: inherit;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(65, 41, 180, 0.2);
+}
+.list-desc {
+	width: 100%;
+	margin: 0 0 0 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.list-desc div h4 {
+	font-weight: 400;
+}
+.list-desc div span {
+	font-size: 12px;
+	color: #6e54ea;
+	font-weight: 500;
+}
+.list-desc div small {
+	display: block;
+	color: rgba(128, 128, 128, 0.44);
+	font-weight: 500;
+}
+.star i {
+	color: gold;
+	font-size: 12px;
+}
+.list-btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.list-btn > i {
+	color: #6e54ea;
+}
+.list-btn button {
+	color: #fff;
+	background: #6e54ea;
+	border-radius: 20px;
+	padding: 3px 8px;
+	position: absolute;
+	bottom: 15px;
+	right: -15px;
+}
+.list-btn button i {
+	border: 1px solid #fff;
+	border-radius: 50px;
+	margin: 0 0 0 5px;
+	padding: 2px;
+	vertical-align: middle;
+}

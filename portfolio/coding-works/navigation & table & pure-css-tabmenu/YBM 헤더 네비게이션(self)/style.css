@@ -1,0 +1,261 @@
+/* Google Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* XEICON */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #222;
+  margin: 0;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Header */
+.banner-inner {
+  text-align: center;
+}
+.close-banner {
+  color: #fff;
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  font-size: 45px;
+}
+.banner-photo {
+  position: relative;
+  height: 90px;
+}
+.banner-photo a {
+  animation: banner 10s linear infinite;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+}
+.banner-photo a img {
+  display: block;
+  margin: auto;
+}
+.banner-photo a:nth-child(1) {
+  animation-delay: 0s;
+  background-color: #6900cf;
+}
+.banner-photo a:nth-child(2) {
+  animation-delay: 3.5s;
+  background-color: #f7eae4;
+}
+.banner-photo a:nth-child(3) {
+  animation-delay: 7s;
+  background-color: #ffc600;
+}
+.lnb-inner {
+  text-align: center;
+  background-color: #ffebf7;
+}
+.lnb img {
+  display: block;
+  margin: auto;
+}
+.gnb-inner {
+  background-color: #272C38;
+}
+nav {
+  margin: auto;
+  width: 1434px;
+  text-align: center;
+  position: relative;
+}
+.gnb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+.gnb > li {
+  float: left;
+  width: calc(calc(100% - 60px)/6);
+  height: 70px;
+  background-color: #272C38;
+  border-right: 1px solid #666;
+  line-height: 70px;
+  position: relative;
+}
+.gnb li > a {
+  color: #fff;
+  display: block;
+  height: 100%;
+}
+.gnb li:first-child {
+  border-left: 1px solid #666;
+}
+.gnb li:nth-child(6) {
+  background-color: #2651B5;
+  border: none;
+  border-right: 1px solid #000;
+}
+.gnb li:last-child {
+  width: 60px;
+  border: none;
+  background-color: #2651B5;
+}
+.gnb li:last-child:hover {
+  background-color: #fff;
+}
+.gnb li:last-child:hover .trigger span {
+  background-color: #000;
+}
+.badge-event {
+  background-color: crimson;
+  border-radius: 5px;
+  font-size: 13px;
+  padding: 0 3px;
+}
+.dropdown {
+  display: none;
+  line-height: 2.5em;
+}
+.dropdown a {
+  display: block;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  transition: 0.35s;
+}
+.dropdown a:hover {
+  background-color: #ddd;
+}
+.dropdown a:last-child {
+  border: none;
+}
+
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+    visibility: visible;
+  }
+  35% {
+    opacity: 1;
+    visibility: visible;
+  }
+  40% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* trigger */
+.trigger {
+  height: 24px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.trigger span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: 0.35s;
+}
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+.sitemap {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+}
+.sitemap-top > div {
+  float: left;
+  width: calc(100% / 7);
+  background-color: #fff;
+  height: 400px;
+  padding: 20px;
+  text-align: left;
+  border-right: 1px solid #aaa;
+}
+.sitemap-top > div:last-child {
+  border: none;
+}
+.sitemap-top div a {
+  display: block;
+}
+.sitemap-top div > a {
+  font-size: 14px;
+}
+.sitemap-top div > a::before {
+  content: '- ';
+}
+.sitemap-top div h4 {
+  margin-top: 0;
+  font-weight: normal;
+}
+.sitemap-top div b {
+  font-weight: normal;
+  display: inline-block;
+  margin: 10px 0;
+}
+.sitemap-bottom {
+  background-color: #E2EDF8;
+  width: 100%;
+  text-align: left;
+}
+.sitemap-bottom a {
+  display: inline-block;
+  padding: 10px;
+}
+
+/* section */
+section {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background: url('images/main1.jpg') no-repeat center center;
+  object-fit: cover;
+  background-color: #a5ec9c;
+}

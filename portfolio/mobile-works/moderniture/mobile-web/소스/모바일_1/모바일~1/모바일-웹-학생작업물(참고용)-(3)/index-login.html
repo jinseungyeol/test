@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>login</title>
+	<!-- Jqurery CDN -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<!-- XE ICON -->
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<!-- Custon CSS -->
+	<link rel="stylesheet" href="style-login.css">
+</head>
+<body>
+	
+	<div class="container login">
+		<div class="login-top">
+			<div class="login-detail">
+				<img src="images/login/logo.png">
+				<div class="login-desc">
+					<input type="text" placeholder="Your ID">
+					<input type="password" placeholder="Your Password">
+				</div>
+				<div>
+					<button class="active">Login</button>
+					<div class="login-find">
+						<a href="#none">아이디찾기</a>
+						<a href="#none">비밀번호 찾기</a>
+						<a href="#none">회원가입</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login-bottom">
+			<span>다른 계정으로 로그인하기</span>
+			<div class="login-btn">
+				<a href="#none"><i class="xi-kakaotalk"></i> KAKAOTALK</a>
+				<a href="#none"><i class="xi-facebook-official"></i> FACEBOOK</a>
+			</div>
+			<small>©<span>FLOW</span> <b>Corp.</b> All Rights Reserved.</small>
+		</div>
+	</div>
+	<script>
+		$('button').click(function(){
+			window.location.href='index-main.html';
+		})
+		$('.login-btn a').click(function(){
+			window.location.href='index-main.html';
+		})
+	</script>
+</body>
+</html>
